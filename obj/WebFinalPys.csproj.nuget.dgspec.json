@@ -1,23 +1,23 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\hilmi\\Source\\Repos\\WebProgramlamaPys\\WebFinalPys.csproj": {}
+    "C:\\Users\\Özgür Özkan\\source\\repos\\WebFinalPys\\WebFinalPys.csproj": {}
   },
   "projects": {
-    "C:\\Users\\hilmi\\Source\\Repos\\WebProgramlamaPys\\WebFinalPys.csproj": {
+    "C:\\Users\\Özgür Özkan\\source\\repos\\WebFinalPys\\WebFinalPys.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\hilmi\\Source\\Repos\\WebProgramlamaPys\\WebFinalPys.csproj",
+        "projectUniqueName": "C:\\Users\\Özgür Özkan\\source\\repos\\WebFinalPys\\WebFinalPys.csproj",
         "projectName": "WebFinalPys",
-        "projectPath": "C:\\Users\\hilmi\\Source\\Repos\\WebProgramlamaPys\\WebFinalPys.csproj",
-        "packagesPath": "C:\\Users\\hilmi\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\hilmi\\Source\\Repos\\WebProgramlamaPys\\obj\\",
+        "projectPath": "C:\\Users\\Özgür Özkan\\source\\repos\\WebFinalPys\\WebFinalPys.csproj",
+        "packagesPath": "C:\\Users\\Özgür Özkan\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\Özgür Özkan\\source\\repos\\WebFinalPys\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
         ],
         "configFilePaths": [
-          "C:\\Users\\hilmi\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\Özgür Özkan\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
