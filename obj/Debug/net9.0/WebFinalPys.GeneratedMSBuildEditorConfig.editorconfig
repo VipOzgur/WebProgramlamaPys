@@ -17,85 +17,185 @@ build_property._SupportedPlatformList = Linux,macOS,Windows
 build_property._SupportedPlatformList = Linux,macOS,Windows
 build_property.RootNamespace = WebFinalPys
 build_property.RootNamespace = WebFinalPys
-build_property.ProjectDir = C:\Users\hilmi\Source\Repos\WebProgramlamaPys\
+build_property.ProjectDir = C:\Users\hilmi\source\repos\WebProgramlamaPys\
 build_property.EnableComHosting = 
 build_property.EnableGeneratedComInterfaceComImportInterop = 
 build_property.RazorLangVersion = 9.0
 build_property.SupportLocalizedComponentNames = 
 build_property.GenerateRazorMetadataSourceChecksumAttributes = 
-build_property.MSBuildProjectDirectory = C:\Users\hilmi\Source\Repos\WebProgramlamaPys
+build_property.MSBuildProjectDirectory = C:\Users\hilmi\source\repos\WebProgramlamaPys
 build_property._RazorSourceGeneratorDebug = 
 build_property.EffectiveAnalysisLevelStyle = 9.0
 build_property.EnableCodeStyleSeverity = 
 
-[C:/Users/hilmi/Source/Repos/WebProgramlamaPys/Views/Departments/Create.cshtml]
+[C:/Users/hilmi/source/repos/WebProgramlamaPys/Views/Departments/Create.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRGVwYXJ0bWVudHNcQ3JlYXRlLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/hilmi/Source/Repos/WebProgramlamaPys/Views/Departments/Delete.cshtml]
+[C:/Users/hilmi/source/repos/WebProgramlamaPys/Views/Departments/Delete.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRGVwYXJ0bWVudHNcRGVsZXRlLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/hilmi/Source/Repos/WebProgramlamaPys/Views/Departments/Details.cshtml]
+[C:/Users/hilmi/source/repos/WebProgramlamaPys/Views/Departments/Details.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRGVwYXJ0bWVudHNcRGV0YWlscy5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/hilmi/Source/Repos/WebProgramlamaPys/Views/Departments/Edit.cshtml]
+[C:/Users/hilmi/source/repos/WebProgramlamaPys/Views/Departments/Edit.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRGVwYXJ0bWVudHNcRWRpdC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/hilmi/Source/Repos/WebProgramlamaPys/Views/Departments/Index.cshtml]
+[C:/Users/hilmi/source/repos/WebProgramlamaPys/Views/Departments/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRGVwYXJ0bWVudHNcSW5kZXguY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/hilmi/Source/Repos/WebProgramlamaPys/Views/Home/Index.cshtml]
+[C:/Users/hilmi/source/repos/WebProgramlamaPys/Views/Home/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxJbmRleC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/hilmi/Source/Repos/WebProgramlamaPys/Views/Home/Privacy.cshtml]
+[C:/Users/hilmi/source/repos/WebProgramlamaPys/Views/Home/Privacy.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxQcml2YWN5LmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/hilmi/Source/Repos/WebProgramlamaPys/Views/Roles/Create.cshtml]
+[C:/Users/hilmi/source/repos/WebProgramlamaPys/Views/Izinler/Create.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSXppbmxlclxDcmVhdGUuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/hilmi/source/repos/WebProgramlamaPys/Views/Izinler/Delete.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSXppbmxlclxEZWxldGUuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/hilmi/source/repos/WebProgramlamaPys/Views/Izinler/Details.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSXppbmxlclxEZXRhaWxzLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/hilmi/source/repos/WebProgramlamaPys/Views/Izinler/Edit.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSXppbmxlclxFZGl0LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/hilmi/source/repos/WebProgramlamaPys/Views/Izinler/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSXppbmxlclxJbmRleC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/hilmi/source/repos/WebProgramlamaPys/Views/MaasPrim/Create.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcTWFhc1ByaW1cQ3JlYXRlLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/hilmi/source/repos/WebProgramlamaPys/Views/MaasPrim/Delete.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcTWFhc1ByaW1cRGVsZXRlLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/hilmi/source/repos/WebProgramlamaPys/Views/MaasPrim/Details.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcTWFhc1ByaW1cRGV0YWlscy5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/hilmi/source/repos/WebProgramlamaPys/Views/MaasPrim/Edit.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcTWFhc1ByaW1cRWRpdC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/hilmi/source/repos/WebProgramlamaPys/Views/MaasPrim/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcTWFhc1ByaW1cSW5kZXguY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/hilmi/source/repos/WebProgramlamaPys/Views/MaasZamlari/Create.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcTWFhc1phbWxhcmlcQ3JlYXRlLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/hilmi/source/repos/WebProgramlamaPys/Views/MaasZamlari/Delete.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcTWFhc1phbWxhcmlcRGVsZXRlLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/hilmi/source/repos/WebProgramlamaPys/Views/MaasZamlari/Details.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcTWFhc1phbWxhcmlcRGV0YWlscy5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/hilmi/source/repos/WebProgramlamaPys/Views/MaasZamlari/Edit.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcTWFhc1phbWxhcmlcRWRpdC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/hilmi/source/repos/WebProgramlamaPys/Views/MaasZamlari/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcTWFhc1phbWxhcmlcSW5kZXguY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/hilmi/source/repos/WebProgramlamaPys/Views/Mesailer/Create.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcTWVzYWlsZXJcQ3JlYXRlLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/hilmi/source/repos/WebProgramlamaPys/Views/Mesailer/Delete.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcTWVzYWlsZXJcRGVsZXRlLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/hilmi/source/repos/WebProgramlamaPys/Views/Mesailer/Details.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcTWVzYWlsZXJcRGV0YWlscy5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/hilmi/source/repos/WebProgramlamaPys/Views/Mesailer/Edit.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcTWVzYWlsZXJcRWRpdC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/hilmi/source/repos/WebProgramlamaPys/Views/Mesailer/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcTWVzYWlsZXJcSW5kZXguY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/hilmi/source/repos/WebProgramlamaPys/Views/Personel/Create.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUGVyc29uZWxcQ3JlYXRlLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/hilmi/source/repos/WebProgramlamaPys/Views/Personel/Delete.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUGVyc29uZWxcRGVsZXRlLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/hilmi/source/repos/WebProgramlamaPys/Views/Personel/Details.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUGVyc29uZWxcRGV0YWlscy5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/hilmi/source/repos/WebProgramlamaPys/Views/Personel/Edit.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUGVyc29uZWxcRWRpdC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/hilmi/source/repos/WebProgramlamaPys/Views/Personel/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUGVyc29uZWxcSW5kZXguY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/hilmi/source/repos/WebProgramlamaPys/Views/Roles/Create.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUm9sZXNcQ3JlYXRlLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/hilmi/Source/Repos/WebProgramlamaPys/Views/Roles/Delete.cshtml]
+[C:/Users/hilmi/source/repos/WebProgramlamaPys/Views/Roles/Delete.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUm9sZXNcRGVsZXRlLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/hilmi/Source/Repos/WebProgramlamaPys/Views/Roles/Details.cshtml]
+[C:/Users/hilmi/source/repos/WebProgramlamaPys/Views/Roles/Details.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUm9sZXNcRGV0YWlscy5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/hilmi/Source/Repos/WebProgramlamaPys/Views/Roles/Edit.cshtml]
+[C:/Users/hilmi/source/repos/WebProgramlamaPys/Views/Roles/Edit.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUm9sZXNcRWRpdC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/hilmi/Source/Repos/WebProgramlamaPys/Views/Roles/Index.cshtml]
+[C:/Users/hilmi/source/repos/WebProgramlamaPys/Views/Roles/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUm9sZXNcSW5kZXguY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/hilmi/Source/Repos/WebProgramlamaPys/Views/Shared/Error.cshtml]
+[C:/Users/hilmi/source/repos/WebProgramlamaPys/Views/Shared/Error.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXEVycm9yLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/hilmi/Source/Repos/WebProgramlamaPys/Views/Shared/_AdminLayout.cshtml]
+[C:/Users/hilmi/source/repos/WebProgramlamaPys/Views/Shared/_AdminLayout.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9BZG1pbkxheW91dC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/hilmi/Source/Repos/WebProgramlamaPys/Views/Shared/_ValidationScriptsPartial.cshtml]
+[C:/Users/hilmi/source/repos/WebProgramlamaPys/Views/Shared/_ValidationScriptsPartial.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9WYWxpZGF0aW9uU2NyaXB0c1BhcnRpYWwuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/hilmi/Source/Repos/WebProgramlamaPys/Views/_ViewImports.cshtml]
+[C:/Users/hilmi/source/repos/WebProgramlamaPys/Views/_ViewImports.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcX1ZpZXdJbXBvcnRzLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/hilmi/Source/Repos/WebProgramlamaPys/Views/_ViewStart.cshtml]
+[C:/Users/hilmi/source/repos/WebProgramlamaPys/Views/_ViewStart.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcX1ZpZXdTdGFydC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/hilmi/Source/Repos/WebProgramlamaPys/Views/Shared/_Layout.cshtml]
+[C:/Users/hilmi/source/repos/WebProgramlamaPys/Views/Shared/_Layout.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9MYXlvdXQuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = b-q6frphyss6

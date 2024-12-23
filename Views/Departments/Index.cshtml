@@ -10,6 +10,12 @@
 <p>
     <a asp-action="Create">Create New</a>
 </p>
+<form asp-controller="Departments" asp-action="Index">
+    <p>
+        <label>Title: <input type="text" name="SearchString" value="@ViewData["searchString"]" /></label>
+        <input type="submit" value="Filter" />
+    </p>
+</form>
 <table class="table">
     <thead>
         <tr>
