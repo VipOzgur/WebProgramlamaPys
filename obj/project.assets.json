@@ -8335,23 +8335,23 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\Özgür Özkan\\.nuget\\packages\\": {},
+    "C:\\Users\\hilmi\\.nuget\\packages\\": {},
     "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\Özgür Özkan\\source\\repos\\WebFinalPys\\WebFinalPys.csproj",
+      "projectUniqueName": "C:\\Users\\hilmi\\source\\repos\\WebProgramlamaPys\\WebFinalPys.csproj",
       "projectName": "WebFinalPys",
-      "projectPath": "C:\\Users\\Özgür Özkan\\source\\repos\\WebFinalPys\\WebFinalPys.csproj",
-      "packagesPath": "C:\\Users\\Özgür Özkan\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\Özgür Özkan\\source\\repos\\WebFinalPys\\obj\\",
+      "projectPath": "C:\\Users\\hilmi\\source\\repos\\WebProgramlamaPys\\WebFinalPys.csproj",
+      "packagesPath": "C:\\Users\\hilmi\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\hilmi\\source\\repos\\WebProgramlamaPys\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
       ],
       "configFilePaths": [
-        "C:\\Users\\Özgür Özkan\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\hilmi\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
@@ -8433,5 +8433,13 @@
         "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.101/PortableRuntimeIdentifierGraph.json"
       }
     }
-  }
+  },
+  "logs": [
+    {
+      "code": "Undefined",
+      "level": "Warning",
+      "warningLevel": 1,
+      "message": "Problem reading the cache file C:\\Users\\hilmi\\source\\repos\\WebProgramlamaPys\\obj\\project.nuget.cache : Invalid property identifier character: <. Path 'version', line 3, position 0."
+    }
+  ]
 }
