@@ -1,8 +1,14 @@
 {
   "version": 2,
+<<<<<<< HEAD
+  "dgSpecHash": "KTCl3Hg9oF4=",
+  "success": true,
+  "projectFilePath": "C:\\Users\\hilmi\\source\\repos\\WebProgramlamaPys\\WebFinalPys.csproj",
+=======
   "dgSpecHash": "JyIH5XqVSi0=",
   "success": true,
   "projectFilePath": "C:\\Users\\Özgür Özkan\\source\\repos\\WebFinalPys\\WebFinalPys.csproj",
+>>>>>>> ea9974b90f89b57c3a5423ce7edcd16bdec3fd63
   "expectedPackageFiles": [
     "C:\\Users\\Özgür Özkan\\.nuget\\packages\\azure.core\\1.38.0\\azure.core.1.38.0.nupkg.sha512",
     "C:\\Users\\Özgür Özkan\\.nuget\\packages\\azure.identity\\1.11.4\\azure.identity.1.11.4.nupkg.sha512",

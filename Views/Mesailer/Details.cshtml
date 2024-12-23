@@ -1,0 +1,73 @@
+﻿@model WebFinalPys.Models.Mesailer
+
+@{
+    ViewData["Title"] = "Details";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<h1>Details</h1>
+
+<div>
+    <h4>Mesailer</h4>
+    <hr />
+    <dl class="row">
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.StartTime)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.StartTime)
+        </dd>
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.FinishTime)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.FinishTime)
+        </dd>
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.SaatlikUcret)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.SaatlikUcret)
+        </dd>
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.Tutar)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.Tutar)
+        </dd>
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.OdenmeDurumu)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.OdenmeDurumu)
+        </dd>
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.Not)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.Not)
+        </dd>
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.Tarih)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.Tarih)
+        </dd>
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.Admin)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.Admin.Id)
+        </dd>
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.PersonelNavigation)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.PersonelNavigation.Id)
+        </dd>
+    </dl>
+</div>
+<div>
+    <a asp-action="Edit" asp-route-id="@Model?.Id">Edit</a> |
+    <a asp-action="Index">Back to List</a>
+</div>
