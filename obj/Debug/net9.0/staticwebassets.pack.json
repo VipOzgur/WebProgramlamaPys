@@ -397,22 +397,6 @@
       "PackagePath": "staticwebassets\\Vendor\\bootstrap\\scss\\vendor\\_rfs.scss"
     },
     {
-      "Id": "C:\\Users\\Özgür Özkan\\source\\repos\\WebFinalPys\\wwwroot\\Vendor\\chart.js\\Chart.bundle.js",
-      "PackagePath": "staticwebassets\\Vendor\\chart.js\\Chart.bundle.js"
-    },
-    {
-      "Id": "C:\\Users\\Özgür Özkan\\source\\repos\\WebFinalPys\\wwwroot\\Vendor\\chart.js\\Chart.bundle.min.js",
-      "PackagePath": "staticwebassets\\Vendor\\chart.js\\Chart.bundle.min.js"
-    },
-    {
-      "Id": "C:\\Users\\Özgür Özkan\\source\\repos\\WebFinalPys\\wwwroot\\Vendor\\chart.js\\Chart.js",
-      "PackagePath": "staticwebassets\\Vendor\\chart.js\\Chart.js"
-    },
-    {
-      "Id": "C:\\Users\\Özgür Özkan\\source\\repos\\WebFinalPys\\wwwroot\\Vendor\\chart.js\\Chart.min.js",
-      "PackagePath": "staticwebassets\\Vendor\\chart.js\\Chart.min.js"
-    },
-    {
       "Id": "C:\\Users\\Özgür Özkan\\source\\repos\\WebFinalPys\\wwwroot\\Vendor\\fontawesome-free\\LICENSE.txt",
       "PackagePath": "staticwebassets\\Vendor\\fontawesome-free\\LICENSE.txt"
     },

@@ -2040,54 +2040,6 @@
       <EndpointProperties><![CDATA[[{"Name":"integrity","Value":"sha256-wOIUHug6OVXHoYeWGjAoDaqtfNb3TifLb/QN/4mUW7o="}]]]></EndpointProperties>
       <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Cache-Control","Value":"no-cache"},{"Name":"Content-Length","Value":"49644"},{"Name":"Content-Type","Value":"application/octet-stream"},{"Name":"ETag","Value":"\u0022wOIUHug6OVXHoYeWGjAoDaqtfNb3TifLb/QN/4mUW7o=\u0022"},{"Name":"Last-Modified","Value":"Fri, 20 Dec 2024 19:25:02 GMT"}]]]></ResponseHeaders>
     </StaticWebAssetEndpoint>
-    <StaticWebAssetEndpoint Include="_content/WebFinalPys/Vendor/chart.js/Chart.bundle.fqegk8fqnn.js">
-      <AssetFile>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\Vendor\chart.js\Chart.bundle.js'))</AssetFile>
-      <Selectors><![CDATA[[]]]></Selectors>
-      <EndpointProperties><![CDATA[[{"Name":"fingerprint","Value":"fqegk8fqnn"},{"Name":"integrity","Value":"sha256-aS0332ww1y291smHsPMu\u002BxY8rq/nR5EnT6Ma1aAAxAA="},{"Name":"label","Value":"_content/WebFinalPys/Vendor/chart.js/Chart.bundle.js"}]]]></EndpointProperties>
-      <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Cache-Control","Value":"max-age=31536000, immutable"},{"Name":"Content-Length","Value":"600535"},{"Name":"Content-Type","Value":"text/javascript"},{"Name":"ETag","Value":"\u0022aS0332ww1y291smHsPMu\u002BxY8rq/nR5EnT6Ma1aAAxAA=\u0022"},{"Name":"Last-Modified","Value":"Fri, 20 Dec 2024 19:25:02 GMT"}]]]></ResponseHeaders>
-    </StaticWebAssetEndpoint>
-    <StaticWebAssetEndpoint Include="_content/WebFinalPys/Vendor/chart.js/Chart.bundle.js">
-      <AssetFile>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\Vendor\chart.js\Chart.bundle.js'))</AssetFile>
-      <Selectors><![CDATA[[]]]></Selectors>
-      <EndpointProperties><![CDATA[[{"Name":"integrity","Value":"sha256-aS0332ww1y291smHsPMu\u002BxY8rq/nR5EnT6Ma1aAAxAA="}]]]></EndpointProperties>
-      <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Cache-Control","Value":"no-cache"},{"Name":"Content-Length","Value":"600535"},{"Name":"Content-Type","Value":"text/javascript"},{"Name":"ETag","Value":"\u0022aS0332ww1y291smHsPMu\u002BxY8rq/nR5EnT6Ma1aAAxAA=\u0022"},{"Name":"Last-Modified","Value":"Fri, 20 Dec 2024 19:25:02 GMT"}]]]></ResponseHeaders>
-    </StaticWebAssetEndpoint>
-    <StaticWebAssetEndpoint Include="_content/WebFinalPys/Vendor/chart.js/Chart.bundle.min.ez5nmyv303.js">
-      <AssetFile>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\Vendor\chart.js\Chart.bundle.min.js'))</AssetFile>
-      <Selectors><![CDATA[[]]]></Selectors>
-      <EndpointProperties><![CDATA[[{"Name":"fingerprint","Value":"ez5nmyv303"},{"Name":"integrity","Value":"sha256-Cszn4X8X8Lt\u002B\u002B8rIor3Zc3PYGIbVlS2AeO7VkNC/wPY="},{"Name":"label","Value":"_content/WebFinalPys/Vendor/chart.js/Chart.bundle.min.js"}]]]></EndpointProperties>
-      <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Cache-Control","Value":"max-age=31536000, immutable"},{"Name":"Content-Length","Value":"226503"},{"Name":"Content-Type","Value":"text/javascript"},{"Name":"ETag","Value":"\u0022Cszn4X8X8Lt\u002B\u002B8rIor3Zc3PYGIbVlS2AeO7VkNC/wPY=\u0022"},{"Name":"Last-Modified","Value":"Fri, 20 Dec 2024 19:25:02 GMT"}]]]></ResponseHeaders>
-    </StaticWebAssetEndpoint>
-    <StaticWebAssetEndpoint Include="_content/WebFinalPys/Vendor/chart.js/Chart.bundle.min.js">
-      <AssetFile>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\Vendor\chart.js\Chart.bundle.min.js'))</AssetFile>
-      <Selectors><![CDATA[[]]]></Selectors>
-      <EndpointProperties><![CDATA[[{"Name":"integrity","Value":"sha256-Cszn4X8X8Lt\u002B\u002B8rIor3Zc3PYGIbVlS2AeO7VkNC/wPY="}]]]></EndpointProperties>
-      <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Cache-Control","Value":"no-cache"},{"Name":"Content-Length","Value":"226503"},{"Name":"Content-Type","Value":"text/javascript"},{"Name":"ETag","Value":"\u0022Cszn4X8X8Lt\u002B\u002B8rIor3Zc3PYGIbVlS2AeO7VkNC/wPY=\u0022"},{"Name":"Last-Modified","Value":"Fri, 20 Dec 2024 19:25:02 GMT"}]]]></ResponseHeaders>
-    </StaticWebAssetEndpoint>
-    <StaticWebAssetEndpoint Include="_content/WebFinalPys/Vendor/chart.js/Chart.godga2crup.js">
-      <AssetFile>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\Vendor\chart.js\Chart.js'))</AssetFile>
-      <Selectors><![CDATA[[]]]></Selectors>
-      <EndpointProperties><![CDATA[[{"Name":"fingerprint","Value":"godga2crup"},{"Name":"integrity","Value":"sha256-wESnP/BrB2L5/FlyzD3xB15qlw5CdOAzFiEHKci\u002BB2Q="},{"Name":"label","Value":"_content/WebFinalPys/Vendor/chart.js/Chart.js"}]]]></EndpointProperties>
-      <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Cache-Control","Value":"max-age=31536000, immutable"},{"Name":"Content-Length","Value":"445053"},{"Name":"Content-Type","Value":"text/javascript"},{"Name":"ETag","Value":"\u0022wESnP/BrB2L5/FlyzD3xB15qlw5CdOAzFiEHKci\u002BB2Q=\u0022"},{"Name":"Last-Modified","Value":"Fri, 20 Dec 2024 19:25:02 GMT"}]]]></ResponseHeaders>
-    </StaticWebAssetEndpoint>
-    <StaticWebAssetEndpoint Include="_content/WebFinalPys/Vendor/chart.js/Chart.js">
-      <AssetFile>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\Vendor\chart.js\Chart.js'))</AssetFile>
-      <Selectors><![CDATA[[]]]></Selectors>
-      <EndpointProperties><![CDATA[[{"Name":"integrity","Value":"sha256-wESnP/BrB2L5/FlyzD3xB15qlw5CdOAzFiEHKci\u002BB2Q="}]]]></EndpointProperties>
-      <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Cache-Control","Value":"no-cache"},{"Name":"Content-Length","Value":"445053"},{"Name":"Content-Type","Value":"text/javascript"},{"Name":"ETag","Value":"\u0022wESnP/BrB2L5/FlyzD3xB15qlw5CdOAzFiEHKci\u002BB2Q=\u0022"},{"Name":"Last-Modified","Value":"Fri, 20 Dec 2024 19:25:02 GMT"}]]]></ResponseHeaders>
-    </StaticWebAssetEndpoint>
-    <StaticWebAssetEndpoint Include="_content/WebFinalPys/Vendor/chart.js/Chart.min.79wajdobwg.js">
-      <AssetFile>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\Vendor\chart.js\Chart.min.js'))</AssetFile>
-      <Selectors><![CDATA[[]]]></Selectors>
-      <EndpointProperties><![CDATA[[{"Name":"fingerprint","Value":"79wajdobwg"},{"Name":"integrity","Value":"sha256-NbfQrKSThKXYuVaEBwxc9oH\u002BOCHLcDclYdr25GGIGb8="},{"Name":"label","Value":"_content/WebFinalPys/Vendor/chart.js/Chart.min.js"}]]]></EndpointProperties>
-      <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Cache-Control","Value":"max-age=31536000, immutable"},{"Name":"Content-Length","Value":"173084"},{"Name":"Content-Type","Value":"text/javascript"},{"Name":"ETag","Value":"\u0022NbfQrKSThKXYuVaEBwxc9oH\u002BOCHLcDclYdr25GGIGb8=\u0022"},{"Name":"Last-Modified","Value":"Fri, 20 Dec 2024 19:25:02 GMT"}]]]></ResponseHeaders>
-    </StaticWebAssetEndpoint>
-    <StaticWebAssetEndpoint Include="_content/WebFinalPys/Vendor/chart.js/Chart.min.js">
-      <AssetFile>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\Vendor\chart.js\Chart.min.js'))</AssetFile>
-      <Selectors><![CDATA[[]]]></Selectors>
-      <EndpointProperties><![CDATA[[{"Name":"integrity","Value":"sha256-NbfQrKSThKXYuVaEBwxc9oH\u002BOCHLcDclYdr25GGIGb8="}]]]></EndpointProperties>
-      <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Cache-Control","Value":"no-cache"},{"Name":"Content-Length","Value":"173084"},{"Name":"Content-Type","Value":"text/javascript"},{"Name":"ETag","Value":"\u0022NbfQrKSThKXYuVaEBwxc9oH\u002BOCHLcDclYdr25GGIGb8=\u0022"},{"Name":"Last-Modified","Value":"Fri, 20 Dec 2024 19:25:02 GMT"}]]]></ResponseHeaders>
-    </StaticWebAssetEndpoint>
     <StaticWebAssetEndpoint Include="_content/WebFinalPys/Vendor/fontawesome-free/attribution.2g32f45dmu.js">
       <AssetFile>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\Vendor\fontawesome-free\attribution.js'))</AssetFile>
       <Selectors><![CDATA[[]]]></Selectors>

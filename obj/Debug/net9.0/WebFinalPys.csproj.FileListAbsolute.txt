@@ -2398,10 +2398,6 @@ C:\Users\Özgür Özkan\source\repos\WebFinalPys\obj\Debug\net9.0\compressed\ma8
 C:\Users\Özgür Özkan\source\repos\WebFinalPys\obj\Debug\net9.0\compressed\0t5t1h61bk-o3jle8hwwp.gz
 C:\Users\Özgür Özkan\source\repos\WebFinalPys\obj\Debug\net9.0\compressed\oirjka8jq4-sc9grb142d.gz
 C:\Users\Özgür Özkan\source\repos\WebFinalPys\obj\Debug\net9.0\compressed\594e4cunlh-rgpsy9uzoj.gz
-C:\Users\Özgür Özkan\source\repos\WebFinalPys\obj\Debug\net9.0\compressed\isw72znubn-fqegk8fqnn.gz
-C:\Users\Özgür Özkan\source\repos\WebFinalPys\obj\Debug\net9.0\compressed\zcpgc7rr3p-ez5nmyv303.gz
-C:\Users\Özgür Özkan\source\repos\WebFinalPys\obj\Debug\net9.0\compressed\kq8jy2pgzo-godga2crup.gz
-C:\Users\Özgür Özkan\source\repos\WebFinalPys\obj\Debug\net9.0\compressed\x7a4de7ftg-79wajdobwg.gz
 C:\Users\Özgür Özkan\source\repos\WebFinalPys\obj\Debug\net9.0\compressed\mv91a8j9tu-2g32f45dmu.gz
 C:\Users\Özgür Özkan\source\repos\WebFinalPys\obj\Debug\net9.0\compressed\3e00lcryhw-mc4uiocwf6.gz
 C:\Users\Özgür Özkan\source\repos\WebFinalPys\obj\Debug\net9.0\compressed\x216p5nd09-zkx4zk6074.gz

@@ -928,7 +928,6 @@ C:\Users\Özgür Özkan\source\repos\WebFinalPys\wwwroot\Vendor\fontawesome-free
 C:\Users\Özgür Özkan\source\repos\WebFinalPys\wwwroot\Vendor\fontawesome-free\svgs\solid\calendar.svg
 C:\Users\Özgür Özkan\source\repos\WebFinalPys\wwwroot\Vendor\fontawesome-free\svgs\solid\scroll.svg
 C:\Users\Özgür Özkan\source\repos\WebFinalPys\wwwroot\Vendor\fontawesome-free\svgs\brands\cc-amazon-pay.svg
-C:\Users\Özgür Özkan\source\repos\WebFinalPys\wwwroot\Vendor\chart.js\Chart.bundle.js
 C:\Users\Özgür Özkan\source\repos\WebFinalPys\wwwroot\Vendor\fontawesome-free\svgs\brands\linkedin.svg
 C:\Users\Özgür Özkan\source\repos\WebFinalPys\wwwroot\Vendor\fontawesome-free\svgs\solid\inbox.svg
 C:\Users\Özgür Özkan\source\repos\WebFinalPys\wwwroot\Vendor\fontawesome-free\svgs\brands\apple-pay.svg
@@ -1022,7 +1021,6 @@ C:\Users\Özgür Özkan\source\repos\WebFinalPys\wwwroot\Vendor\fontawesome-free
 C:\Users\Özgür Özkan\source\repos\WebFinalPys\wwwroot\Vendor\fontawesome-free\svgs\brands\contao.svg
 C:\Users\Özgür Özkan\source\repos\WebFinalPys\wwwroot\Vendor\fontawesome-free\svgs\regular\dot-circle.svg
 C:\Users\Özgür Özkan\source\repos\WebFinalPys\wwwroot\Vendor\fontawesome-free\svgs\solid\sort-amount-down.svg
-C:\Users\Özgür Özkan\source\repos\WebFinalPys\wwwroot\Vendor\chart.js\Chart.js
 C:\Users\Özgür Özkan\source\repos\WebFinalPys\wwwroot\Vendor\fontawesome-free\svgs\brands\osi.svg
 C:\Users\Özgür Özkan\source\repos\WebFinalPys\wwwroot\Vendor\fontawesome-free\svgs\brands\twitch.svg
 C:\Users\Özgür Özkan\source\repos\WebFinalPys\wwwroot\Vendor\fontawesome-free\svgs\solid\superscript.svg
@@ -1619,7 +1617,6 @@ C:\Users\Özgür Özkan\source\repos\WebFinalPys\wwwroot\Vendor\fontawesome-free
 C:\Users\Özgür Özkan\source\repos\WebFinalPys\wwwroot\Vendor\fontawesome-free\svgs\brands\shirtsinbulk.svg
 C:\Users\Özgür Özkan\source\repos\WebFinalPys\wwwroot\Vendor\fontawesome-free\svgs\solid\truck-pickup.svg
 C:\Users\Özgür Özkan\source\repos\WebFinalPys\wwwroot\lib\bootstrap\dist\css\bootstrap-grid.css
-C:\Users\Özgür Özkan\source\repos\WebFinalPys\wwwroot\Vendor\chart.js\Chart.min.js
 C:\Users\Özgür Özkan\source\repos\WebFinalPys\wwwroot\Vendor\fontawesome-free\svgs\solid\fax.svg
 C:\Users\Özgür Özkan\source\repos\WebFinalPys\wwwroot\Vendor\fontawesome-free\svgs\solid\bookmark.svg
 C:\Users\Özgür Özkan\source\repos\WebFinalPys\wwwroot\Vendor\fontawesome-free\svgs\solid\paint-roller.svg
@@ -1715,7 +1712,6 @@ C:\Users\Özgür Özkan\source\repos\WebFinalPys\wwwroot\Vendor\fontawesome-free
 C:\Users\Özgür Özkan\source\repos\WebFinalPys\wwwroot\Vendor\fontawesome-free\svgs\solid\ghost.svg
 C:\Users\Özgür Özkan\source\repos\WebFinalPys\wwwroot\Vendor\fontawesome-free\svgs\brands\grunt.svg
 C:\Users\Özgür Özkan\source\repos\WebFinalPys\wwwroot\Vendor\fontawesome-free\svgs\brands\algolia.svg
-C:\Users\Özgür Özkan\source\repos\WebFinalPys\wwwroot\Vendor\chart.js\Chart.bundle.min.js
 C:\Users\Özgür Özkan\source\repos\WebFinalPys\wwwroot\Vendor\fontawesome-free\svgs\regular\square.svg
 C:\Users\Özgür Özkan\source\repos\WebFinalPys\wwwroot\Vendor\fontawesome-free\svgs\solid\font-awesome-logo-full.svg
 C:\Users\Özgür Özkan\source\repos\WebFinalPys\wwwroot\Vendor\fontawesome-free\svgs\brands\cloudversify.svg
@@ -1909,10 +1905,6 @@ wwwroot\Vendor\bootstrap\scss\utilities\_stretched-link.scss
 wwwroot\Vendor\bootstrap\scss\utilities\_text.scss
 wwwroot\Vendor\bootstrap\scss\utilities\_visibility.scss
 wwwroot\Vendor\bootstrap\scss\vendor\_rfs.scss
-wwwroot\Vendor\chart.js\Chart.bundle.js
-wwwroot\Vendor\chart.js\Chart.bundle.min.js
-wwwroot\Vendor\chart.js\Chart.js
-wwwroot\Vendor\chart.js\Chart.min.js
 wwwroot\Vendor\fontawesome-free\attribution.js
 wwwroot\Vendor\fontawesome-free\css\all.css
 wwwroot\Vendor\fontawesome-free\css\all.min.css
