@@ -152,6 +152,10 @@ build_metadata.AdditionalFiles.CssScope =
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUGVyc29uZWxcSW5kZXguY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
+[C:/Users/CASPER/OneDrive/Masaüstü/webprogramlama/Views/Personel/Password.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUGVyc29uZWxcUGFzc3dvcmQuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
 [C:/Users/CASPER/OneDrive/Masaüstü/webprogramlama/Views/Roles/Create.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUm9sZXNcQ3JlYXRlLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 

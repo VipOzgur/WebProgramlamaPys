@@ -1,0 +1,41 @@
+﻿<?xml version="1.0" encoding="utf-8" standalone="no"?>
+<Project ToolsVersion="14.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup Condition=" '$(ExcludeRestorePackageImports)' != 'true' ">
+    <RestoreSuccess Condition=" '$(RestoreSuccess)' == '' ">True</RestoreSuccess>
+    <RestoreTool Condition=" '$(RestoreTool)' == '' ">NuGet</RestoreTool>
+    <ProjectAssetsFile Condition=" '$(ProjectAssetsFile)' == '' ">$(MSBuildThisFileDirectory)project.assets.json</ProjectAssetsFile>
+    <NuGetPackageRoot Condition=" '$(NuGetPackageRoot)' == '' ">$(UserProfile)\.nuget\packages\</NuGetPackageRoot>
+<<<<<<< HEAD
+    <NuGetPackageFolders Condition=" '$(NuGetPackageFolders)' == '' ">C:\Users\CASPER\.nuget\packages\;C:\Program Files (x86)\Microsoft Visual Studio\Shared\NuGetPackages</NuGetPackageFolders>
+=======
+    <NuGetPackageFolders Condition=" '$(NuGetPackageFolders)' == '' ">C:\Users\hilmi\.nuget\packages\;C:\Program Files (x86)\Microsoft Visual Studio\Shared\NuGetPackages</NuGetPackageFolders>
+>>>>>>> 12ff2c3b1fffe05695460203da5e40104e8ebe2b
+    <NuGetProjectStyle Condition=" '$(NuGetProjectStyle)' == '' ">PackageReference</NuGetProjectStyle>
+    <NuGetToolVersion Condition=" '$(NuGetToolVersion)' == '' ">6.12.2</NuGetToolVersion>
+  </PropertyGroup>
+  <ItemGroup Condition=" '$(ExcludeRestorePackageImports)' != 'true' ">
+<<<<<<< HEAD
+    <SourceRoot Include="C:\Users\CASPER\.nuget\packages\" />
+=======
+    <SourceRoot Include="C:\Users\hilmi\.nuget\packages\" />
+>>>>>>> 12ff2c3b1fffe05695460203da5e40104e8ebe2b
+    <SourceRoot Include="C:\Program Files (x86)\Microsoft Visual Studio\Shared\NuGetPackages\" />
+  </ItemGroup>
+  <ImportGroup Condition=" '$(ExcludeRestorePackageImports)' != 'true' ">
+    <Import Project="$(NuGetPackageRoot)microsoft.codeanalysis.analyzers\3.3.4\buildTransitive\Microsoft.CodeAnalysis.Analyzers.props" Condition="Exists('$(NuGetPackageRoot)microsoft.codeanalysis.analyzers\3.3.4\buildTransitive\Microsoft.CodeAnalysis.Analyzers.props')" />
+    <Import Project="$(NuGetPackageRoot)microsoft.entityframeworkcore\9.0.0\buildTransitive\net8.0\Microsoft.EntityFrameworkCore.props" Condition="Exists('$(NuGetPackageRoot)microsoft.entityframeworkcore\9.0.0\buildTransitive\net8.0\Microsoft.EntityFrameworkCore.props')" />
+    <Import Project="$(NuGetPackageRoot)microsoft.entityframeworkcore.design\9.0.0\build\net8.0\Microsoft.EntityFrameworkCore.Design.props" Condition="Exists('$(NuGetPackageRoot)microsoft.entityframeworkcore.design\9.0.0\build\net8.0\Microsoft.EntityFrameworkCore.Design.props')" />
+    <Import Project="$(NuGetPackageRoot)microsoft.aspnetcore.components.quickgrid\9.0.0\buildTransitive\Microsoft.AspNetCore.Components.QuickGrid.props" Condition="Exists('$(NuGetPackageRoot)microsoft.aspnetcore.components.quickgrid\9.0.0\buildTransitive\Microsoft.AspNetCore.Components.QuickGrid.props')" />
+  </ImportGroup>
+  <PropertyGroup Condition=" '$(ExcludeRestorePackageImports)' != 'true' ">
+<<<<<<< HEAD
+    <PkgMicrosoft_CodeAnalysis_Analyzers Condition=" '$(PkgMicrosoft_CodeAnalysis_Analyzers)' == '' ">C:\Users\CASPER\.nuget\packages\microsoft.codeanalysis.analyzers\3.3.4</PkgMicrosoft_CodeAnalysis_Analyzers>
+    <PkgMicrosoft_CodeAnalysis_AnalyzerUtilities Condition=" '$(PkgMicrosoft_CodeAnalysis_AnalyzerUtilities)' == '' ">C:\Users\CASPER\.nuget\packages\microsoft.codeanalysis.analyzerutilities\3.3.0</PkgMicrosoft_CodeAnalysis_AnalyzerUtilities>
+    <PkgMicrosoft_EntityFrameworkCore_Tools Condition=" '$(PkgMicrosoft_EntityFrameworkCore_Tools)' == '' ">C:\Users\CASPER\.nuget\packages\microsoft.entityframeworkcore.tools\9.0.0</PkgMicrosoft_EntityFrameworkCore_Tools>
+=======
+    <PkgMicrosoft_CodeAnalysis_Analyzers Condition=" '$(PkgMicrosoft_CodeAnalysis_Analyzers)' == '' ">C:\Users\hilmi\.nuget\packages\microsoft.codeanalysis.analyzers\3.3.4</PkgMicrosoft_CodeAnalysis_Analyzers>
+    <PkgMicrosoft_CodeAnalysis_AnalyzerUtilities Condition=" '$(PkgMicrosoft_CodeAnalysis_AnalyzerUtilities)' == '' ">C:\Users\hilmi\.nuget\packages\microsoft.codeanalysis.analyzerutilities\3.3.0</PkgMicrosoft_CodeAnalysis_AnalyzerUtilities>
+    <PkgMicrosoft_EntityFrameworkCore_Tools Condition=" '$(PkgMicrosoft_EntityFrameworkCore_Tools)' == '' ">C:\Users\hilmi\.nuget\packages\microsoft.entityframeworkcore.tools\9.0.0</PkgMicrosoft_EntityFrameworkCore_Tools>
+>>>>>>> 12ff2c3b1fffe05695460203da5e40104e8ebe2b
+  </PropertyGroup>
+</Project>

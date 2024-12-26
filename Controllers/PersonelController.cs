@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Linq;
+using System.Security.Claims;
 using System.Threading.Tasks;
 using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
@@ -199,6 +200,31 @@ namespace WebFinalPys.Controllers
 
             await _context.SaveChangesAsync();
             return RedirectToAction(nameof(Index));
+        }
+        public IActionResult Password()
+        {
+            return View();
+        }
+        [HttpPost]
+        public IActionResult Password([FromForm] Personel personel)
+        {
+            if (personel.Password == null || personel.NewPassword == null) { return NotFound(); }
+            if (personel.Password.ToString() != personel.NewPassword.ToString())
+            {
+                ViewData["mesaj"] = "Sifre tekrari ayni olmali";
+                return View();
+            }
+            Personel personel2 = _context.Personels.FirstOrDefault(x => x.Id == long.Parse(User.FindFirst(ClaimTypes.Sid).Value));
+            if (personel2 == null)
+            {
+                return NotFound();
+            }
+            var helper = new HelperClass();
+            personel2.Password = helper.Hash(personel.Password);
+            _context.Update(personel2);
+            _context.SaveChangesAsync();
+            ViewData["mesaj"] = "Sifre guncelleme basarili";
+            return View();
         }
 
         private bool PersonelExists(int id)

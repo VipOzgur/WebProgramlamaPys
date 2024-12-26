@@ -14,7 +14,11 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("WebFinalPys")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
+<<<<<<< HEAD
 [assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+972b3ae0408880ed776981dde00aaa43a2b61828")]
+=======
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+b76fc0ec89d0f642dfa6c2469499b6d2b16ff07e")]
+>>>>>>> rumeysa
 [assembly: System.Reflection.AssemblyProductAttribute("WebFinalPys")]
 [assembly: System.Reflection.AssemblyTitleAttribute("WebFinalPys")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
