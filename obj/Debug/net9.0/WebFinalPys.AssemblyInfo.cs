@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("WebFinalPys")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+8ddf9142247046ae4a1f6dccc48f9cd279cd8a71")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+b3ee38d56813b371d3fdb81afcaac6d39b317d14")]
 [assembly: System.Reflection.AssemblyProductAttribute("WebFinalPys")]
 [assembly: System.Reflection.AssemblyTitleAttribute("WebFinalPys")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
