@@ -50,8 +50,8 @@ namespace WebFinalPys.Controllers
         // GET: Mesailer/Create
         public IActionResult Create()
         {
-            ViewData["AdminId"] = new SelectList(_context.Personels, "Id", "Id");
-            ViewData["Personel"] = new SelectList(_context.Personels, "Id", "Id");
+            ViewData["AdminId"] = new SelectList(_context.Personels, "Id", "Ad");
+            ViewData["Personel"] = new SelectList(_context.Personels, "Id", "Ad");
             return View();
         }
 
@@ -68,8 +68,8 @@ namespace WebFinalPys.Controllers
                 await _context.SaveChangesAsync();
                 return RedirectToAction(nameof(Index));
             }
-            ViewData["AdminId"] = new SelectList(_context.Personels, "Id", "Id", mesailer.AdminId);
-            ViewData["Personel"] = new SelectList(_context.Personels, "Id", "Id", mesailer.Personel);
+            ViewData["AdminId"] = new SelectList(_context.Personels, "Id", "Ad", mesailer.AdminId);
+            ViewData["Personel"] = new SelectList(_context.Personels, "Id", "Ad", mesailer.Personel);
             return View(mesailer);
         }
 
@@ -86,8 +86,8 @@ namespace WebFinalPys.Controllers
             {
                 return NotFound();
             }
-            ViewData["AdminId"] = new SelectList(_context.Personels, "Id", "Id", mesailer.AdminId);
-            ViewData["Personel"] = new SelectList(_context.Personels, "Id", "Id", mesailer.Personel);
+            ViewData["AdminId"] = new SelectList(_context.Personels, "Id", "Ad", mesailer.AdminId);
+            ViewData["Personel"] = new SelectList(_context.Personels, "Id", "Ad", mesailer.Personel);
             return View(mesailer);
         }
 
@@ -123,8 +123,8 @@ namespace WebFinalPys.Controllers
                 }
                 return RedirectToAction(nameof(Index));
             }
-            ViewData["AdminId"] = new SelectList(_context.Personels, "Id", "Id", mesailer.AdminId);
-            ViewData["Personel"] = new SelectList(_context.Personels, "Id", "Id", mesailer.Personel);
+            ViewData["AdminId"] = new SelectList(_context.Personels, "Id", "Ad", mesailer.AdminId);
+            ViewData["Personel"] = new SelectList(_context.Personels, "Id", "Ad", mesailer.Personel);
             return View(mesailer);
         }
 
