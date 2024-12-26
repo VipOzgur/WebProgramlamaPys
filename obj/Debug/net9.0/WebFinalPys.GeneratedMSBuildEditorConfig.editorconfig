@@ -1,19 +1,11 @@
 is_global = true
 build_property.TargetFramework = net9.0
-build_property.TargetFramework = net9.0
-build_property.TargetPlatformMinVersion = 
 build_property.TargetPlatformMinVersion = 
 build_property.UsingMicrosoftNETSdkWeb = true
-build_property.UsingMicrosoftNETSdkWeb = true
-build_property.ProjectTypeGuids = 
 build_property.ProjectTypeGuids = 
 build_property.InvariantGlobalization = 
-build_property.InvariantGlobalization = 
-build_property.PlatformNeutralAssembly = 
 build_property.PlatformNeutralAssembly = 
 build_property.EnforceExtendedAnalyzerRules = 
-build_property.EnforceExtendedAnalyzerRules = 
-build_property._SupportedPlatformList = Linux,macOS,Windows
 build_property._SupportedPlatformList = Linux,macOS,Windows
 build_property.RootNamespace = WebFinalPys
 build_property.RootNamespace = WebFinalPys
@@ -52,8 +44,112 @@ build_metadata.AdditionalFiles.CssScope =
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxJbmRleC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
+[C:/Users/HİLAL/Source/Repos/web proje1/WebProgramlamaPys/Views/Home/Login.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxMb2dpbi5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
 [C:/Users/HİLAL/Source/Repos/web proje1/WebProgramlamaPys/Views/Home/Privacy.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxQcml2YWN5LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/HİLAL/Source/Repos/web proje1/WebProgramlamaPys/Views/Izinler/Create.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSXppbmxlclxDcmVhdGUuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/HİLAL/Source/Repos/web proje1/WebProgramlamaPys/Views/Izinler/Delete.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSXppbmxlclxEZWxldGUuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/HİLAL/Source/Repos/web proje1/WebProgramlamaPys/Views/Izinler/Details.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSXppbmxlclxEZXRhaWxzLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/HİLAL/Source/Repos/web proje1/WebProgramlamaPys/Views/Izinler/Edit.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSXppbmxlclxFZGl0LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/HİLAL/Source/Repos/web proje1/WebProgramlamaPys/Views/Izinler/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSXppbmxlclxJbmRleC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/HİLAL/Source/Repos/web proje1/WebProgramlamaPys/Views/MaasPrim/Create.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcTWFhc1ByaW1cQ3JlYXRlLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/HİLAL/Source/Repos/web proje1/WebProgramlamaPys/Views/MaasPrim/Delete.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcTWFhc1ByaW1cRGVsZXRlLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/HİLAL/Source/Repos/web proje1/WebProgramlamaPys/Views/MaasPrim/Details.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcTWFhc1ByaW1cRGV0YWlscy5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/HİLAL/Source/Repos/web proje1/WebProgramlamaPys/Views/MaasPrim/Edit.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcTWFhc1ByaW1cRWRpdC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/HİLAL/Source/Repos/web proje1/WebProgramlamaPys/Views/MaasPrim/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcTWFhc1ByaW1cSW5kZXguY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/HİLAL/Source/Repos/web proje1/WebProgramlamaPys/Views/MaasZamlari/Create.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcTWFhc1phbWxhcmlcQ3JlYXRlLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/HİLAL/Source/Repos/web proje1/WebProgramlamaPys/Views/MaasZamlari/Delete.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcTWFhc1phbWxhcmlcRGVsZXRlLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/HİLAL/Source/Repos/web proje1/WebProgramlamaPys/Views/MaasZamlari/Details.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcTWFhc1phbWxhcmlcRGV0YWlscy5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/HİLAL/Source/Repos/web proje1/WebProgramlamaPys/Views/MaasZamlari/Edit.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcTWFhc1phbWxhcmlcRWRpdC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/HİLAL/Source/Repos/web proje1/WebProgramlamaPys/Views/MaasZamlari/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcTWFhc1phbWxhcmlcSW5kZXguY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/HİLAL/Source/Repos/web proje1/WebProgramlamaPys/Views/Mesailer/Create.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcTWVzYWlsZXJcQ3JlYXRlLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/HİLAL/Source/Repos/web proje1/WebProgramlamaPys/Views/Mesailer/Delete.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcTWVzYWlsZXJcRGVsZXRlLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/HİLAL/Source/Repos/web proje1/WebProgramlamaPys/Views/Mesailer/Details.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcTWVzYWlsZXJcRGV0YWlscy5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/HİLAL/Source/Repos/web proje1/WebProgramlamaPys/Views/Mesailer/Edit.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcTWVzYWlsZXJcRWRpdC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/HİLAL/Source/Repos/web proje1/WebProgramlamaPys/Views/Mesailer/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcTWVzYWlsZXJcSW5kZXguY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/HİLAL/Source/Repos/web proje1/WebProgramlamaPys/Views/Personel/Create.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUGVyc29uZWxcQ3JlYXRlLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/HİLAL/Source/Repos/web proje1/WebProgramlamaPys/Views/Personel/Delete.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUGVyc29uZWxcRGVsZXRlLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/HİLAL/Source/Repos/web proje1/WebProgramlamaPys/Views/Personel/Details.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUGVyc29uZWxcRGV0YWlscy5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/HİLAL/Source/Repos/web proje1/WebProgramlamaPys/Views/Personel/Edit.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUGVyc29uZWxcRWRpdC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/HİLAL/Source/Repos/web proje1/WebProgramlamaPys/Views/Personel/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUGVyc29uZWxcSW5kZXguY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
 [C:/Users/HİLAL/Source/Repos/web proje1/WebProgramlamaPys/Views/Roles/Create.cshtml]
