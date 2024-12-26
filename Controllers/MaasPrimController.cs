@@ -50,8 +50,8 @@ namespace WebFinalPys.Controllers
         // GET: MaasPrim/Create
         public IActionResult Create()
         {
-            ViewData["AdminId"] = new SelectList(_context.Personels, "Id", "Id");
-            ViewData["PersonelId"] = new SelectList(_context.Personels, "Id", "Id");
+            ViewData["AdminId"] = new SelectList(_context.Personels, "Id", "Ad");
+            ViewData["PersonelId"] = new SelectList(_context.Personels, "Id", "Ad");
             return View();
         }
 
@@ -68,8 +68,8 @@ namespace WebFinalPys.Controllers
                 await _context.SaveChangesAsync();
                 return RedirectToAction(nameof(Index));
             }
-            ViewData["AdminId"] = new SelectList(_context.Personels, "Id", "Id", maasPrim.AdminId);
-            ViewData["PersonelId"] = new SelectList(_context.Personels, "Id", "Id", maasPrim.PersonelId);
+            ViewData["AdminId"] = new SelectList(_context.Personels, "Id", "Ad", maasPrim.AdminId);
+            ViewData["PersonelId"] = new SelectList(_context.Personels, "Id", "Ad", maasPrim.PersonelId);
             return View(maasPrim);
         }
 
@@ -86,8 +86,8 @@ namespace WebFinalPys.Controllers
             {
                 return NotFound();
             }
-            ViewData["AdminId"] = new SelectList(_context.Personels, "Id", "Id", maasPrim.AdminId);
-            ViewData["PersonelId"] = new SelectList(_context.Personels, "Id", "Id", maasPrim.PersonelId);
+            ViewData["AdminId"] = new SelectList(_context.Personels, "Id", "Ad", maasPrim.AdminId);
+            ViewData["PersonelId"] = new SelectList(_context.Personels, "Id", "Ad", maasPrim.PersonelId);
             return View(maasPrim);
         }
 
@@ -123,8 +123,8 @@ namespace WebFinalPys.Controllers
                 }
                 return RedirectToAction(nameof(Index));
             }
-            ViewData["AdminId"] = new SelectList(_context.Personels, "Id", "Id", maasPrim.AdminId);
-            ViewData["PersonelId"] = new SelectList(_context.Personels, "Id", "Id", maasPrim.PersonelId);
+            ViewData["AdminId"] = new SelectList(_context.Personels, "Id", "Ad", maasPrim.AdminId);
+            ViewData["PersonelId"] = new SelectList(_context.Personels, "Id", "Ad", maasPrim.PersonelId);
             return View(maasPrim);
         }
 

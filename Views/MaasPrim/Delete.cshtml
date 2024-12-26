@@ -2,7 +2,7 @@
 
 @{
     ViewData["Title"] = "Delete";
-    Layout = "~/Views/Shared/_Layout.cshtml";
+    Layout = "~/Views/Shared/_AdminLayout.cshtml";
 }
 
 <h1>Delete</h1>
@@ -40,13 +40,13 @@
             @Html.DisplayNameFor(model => model.Admin)
         </dt>
         <dd class = "col-sm-10">
-            @Html.DisplayFor(model => model.Admin.Id)
+            @Html.DisplayFor(model => model.Admin.Ad)
         </dd>
         <dt class = "col-sm-2">
             @Html.DisplayNameFor(model => model.Personel)
         </dt>
         <dd class = "col-sm-10">
-            @Html.DisplayFor(model => model.Personel.Id)
+            @Html.DisplayFor(model => model.Personel.Ad)
         </dd>
     </dl>
     

@@ -2,7 +2,7 @@
 
 @{
     ViewData["Title"] = "Index";
-    Layout = "~/Views/Shared/_Layout.cshtml";
+    Layout = "~/Views/Shared/_AdminLayout.cshtml";
 }
 
 <h1>Index</h1>
@@ -50,10 +50,10 @@
                 @Html.DisplayFor(modelItem => item.Not)
             </td>
             <td>
-                @Html.DisplayFor(modelItem => item.Admin.Id)
+                @Html.DisplayFor(modelItem => item.Admin.Ad)
             </td>
             <td>
-                @Html.DisplayFor(modelItem => item.Personel.Id)
+                @Html.DisplayFor(modelItem => item.Personel.Ad)
             </td>
             <td>
                 <a asp-action="Edit" asp-route-id="@item.Id">Edit</a> |

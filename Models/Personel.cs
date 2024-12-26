@@ -7,6 +7,8 @@ namespace WebFinalPys.Models;
 public partial class Personel
 {
     [NotMapped]
+    public string? NewPassword { get; set; }
+    [NotMapped]
     public IFormFile? ImageFile { get; set; }
     public int Id { get; set; }
 
