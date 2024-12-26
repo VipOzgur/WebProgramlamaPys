@@ -10,6 +10,7 @@ using WebFinalPys.Models;
 
 namespace WebFinalPys.Controllers
 {
+    [Authorize]
     public class RolesController : Controller
     {
         private readonly PysDbContext _context;

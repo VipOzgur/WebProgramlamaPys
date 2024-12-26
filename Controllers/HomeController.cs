@@ -17,7 +17,7 @@ namespace WebFinalPys.Controllers
         {
             _logger = new PysDbContext();
         }
-
+        [Authorize]
         public IActionResult Index()
         {
             return View();
