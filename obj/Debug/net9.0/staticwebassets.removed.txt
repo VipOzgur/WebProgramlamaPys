@@ -1,0 +1,4 @@
+C:\Users\CASPER\OneDrive\Masaüstü\webprogramlama\wwwroot\Vendor\chart.js\Chart.bundle.js
+C:\Users\CASPER\OneDrive\Masaüstü\webprogramlama\wwwroot\Vendor\chart.js\Chart.js
+C:\Users\CASPER\OneDrive\Masaüstü\webprogramlama\wwwroot\Vendor\chart.js\Chart.min.js
+C:\Users\CASPER\OneDrive\Masaüstü\webprogramlama\wwwroot\Vendor\chart.js\Chart.bundle.min.js
