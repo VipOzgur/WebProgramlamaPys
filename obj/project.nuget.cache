@@ -1,14 +1,8 @@
 {
   "version": 2,
-<<<<<<< HEAD
   "dgSpecHash": "x6C/5lX1FaU=",
   "success": true,
   "projectFilePath": "C:\\Users\\CASPER\\OneDrive\\Masaüstü\\webprogramlama\\WebFinalPys.csproj",
-=======
-  "dgSpecHash": "/Uc7/r50rco=",
-  "success": true,
-  "projectFilePath": "C:\\Users\\hilmi\\source\\repos\\VipOzgur\\WebProgramlamaPys\\WebFinalPys.csproj",
->>>>>>> 2a39d5d17e5d7e007545e1b4e44c9716b6f38cfa
   "expectedPackageFiles": [
     "C:\\Users\\CASPER\\.nuget\\packages\\azure.core\\1.38.0\\azure.core.1.38.0.nupkg.sha512",
     "C:\\Users\\CASPER\\.nuget\\packages\\azure.identity\\1.11.4\\azure.identity.1.11.4.nupkg.sha512",
@@ -184,5 +178,12 @@
     "C:\\Users\\CASPER\\.nuget\\packages\\system.threading.tasks.dataflow\\8.0.0\\system.threading.tasks.dataflow.8.0.0.nupkg.sha512",
     "C:\\Users\\CASPER\\.nuget\\packages\\system.threading.tasks.extensions\\4.5.4\\system.threading.tasks.extensions.4.5.4.nupkg.sha512"
   ],
-  "logs": []
+  "logs": [
+    {
+      "code": "Undefined",
+      "level": "Warning",
+      "warningLevel": 1,
+      "message": "Önbellek dosyası C:\\Users\\CASPER\\OneDrive\\Masaüstü\\webprogramlama\\obj\\project.nuget.cache okunurken bir sorun oluştu : Invalid property identifier character: <. Path 'version', line 3, position 0."
+    }
+  ]
 }

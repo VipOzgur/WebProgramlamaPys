@@ -8341,19 +8341,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-<<<<<<< HEAD
       "projectUniqueName": "C:\\Users\\CASPER\\OneDrive\\Masaüstü\\webprogramlama\\WebFinalPys.csproj",
       "projectName": "WebFinalPys",
       "projectPath": "C:\\Users\\CASPER\\OneDrive\\Masaüstü\\webprogramlama\\WebFinalPys.csproj",
       "packagesPath": "C:\\Users\\CASPER\\.nuget\\packages\\",
       "outputPath": "C:\\Users\\CASPER\\OneDrive\\Masaüstü\\webprogramlama\\obj\\",
-=======
-      "projectUniqueName": "C:\\Users\\hilmi\\source\\repos\\VipOzgur\\WebProgramlamaPys\\WebFinalPys.csproj",
-      "projectName": "WebFinalPys",
-      "projectPath": "C:\\Users\\hilmi\\source\\repos\\VipOzgur\\WebProgramlamaPys\\WebFinalPys.csproj",
-      "packagesPath": "C:\\Users\\hilmi\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\hilmi\\source\\repos\\VipOzgur\\WebProgramlamaPys\\obj\\",
->>>>>>> 2a39d5d17e5d7e007545e1b4e44c9716b6f38cfa
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
@@ -8441,5 +8433,13 @@
         "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.101/PortableRuntimeIdentifierGraph.json"
       }
     }
-  }
+  },
+  "logs": [
+    {
+      "code": "Undefined",
+      "level": "Warning",
+      "warningLevel": 1,
+      "message": "Önbellek dosyası C:\\Users\\CASPER\\OneDrive\\Masaüstü\\webprogramlama\\obj\\project.nuget.cache okunurken bir sorun oluştu : Invalid property identifier character: <. Path 'version', line 3, position 0."
+    }
+  ]
 }
