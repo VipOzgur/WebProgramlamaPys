@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\HİLAL\\Source\\Repos\\web proje1\\WebProgramlamaPys\\WebFinalPys.csproj": {}
+    "C:\\Users\\HİLAL\\Source\\Repos\\web proje1\\WebFinalPys\\WebFinalPys.csproj": {}
   },
   "projects": {
-    "C:\\Users\\HİLAL\\Source\\Repos\\web proje1\\WebProgramlamaPys\\WebFinalPys.csproj": {
+    "C:\\Users\\HİLAL\\Source\\Repos\\web proje1\\WebFinalPys\\WebFinalPys.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\HİLAL\\Source\\Repos\\web proje1\\WebProgramlamaPys\\WebFinalPys.csproj",
+        "projectUniqueName": "C:\\Users\\HİLAL\\Source\\Repos\\web proje1\\WebFinalPys\\WebFinalPys.csproj",
         "projectName": "WebFinalPys",
-        "projectPath": "C:\\Users\\HİLAL\\Source\\Repos\\web proje1\\WebProgramlamaPys\\WebFinalPys.csproj",
+        "projectPath": "C:\\Users\\HİLAL\\Source\\Repos\\web proje1\\WebFinalPys\\WebFinalPys.csproj",
         "packagesPath": "C:\\Users\\HİLAL\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\HİLAL\\Source\\Repos\\web proje1\\WebProgramlamaPys\\obj\\",
+        "outputPath": "C:\\Users\\HİLAL\\Source\\Repos\\web proje1\\WebFinalPys\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"

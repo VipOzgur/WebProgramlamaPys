@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "xKKzS3YhOug=",
+  "dgSpecHash": "++M5vdw1D6s=",
   "success": true,
-  "projectFilePath": "C:\\Users\\HİLAL\\Source\\Repos\\web proje1\\WebProgramlamaPys\\WebFinalPys.csproj",
+  "projectFilePath": "C:\\Users\\HİLAL\\Source\\Repos\\web proje1\\WebFinalPys\\WebFinalPys.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\HİLAL\\.nuget\\packages\\azure.core\\1.38.0\\azure.core.1.38.0.nupkg.sha512",
     "C:\\Users\\HİLAL\\.nuget\\packages\\azure.identity\\1.11.4\\azure.identity.1.11.4.nupkg.sha512",

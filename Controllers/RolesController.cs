@@ -15,9 +15,9 @@ namespace WebFinalPys.Controllers
     {
         private readonly PysDbContext _context;
 
-        public RolesController(PysDbContext context)
+        public RolesController()
         {
-            _context = context;
+            _context = new PysDbContext();
         }
 
         // GET: Roles
