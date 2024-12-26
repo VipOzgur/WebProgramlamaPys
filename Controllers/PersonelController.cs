@@ -70,8 +70,8 @@ namespace WebFinalPys.Controllers
         // GET: Personel/Create
         public IActionResult Create()
         {
-            ViewData["DepId"] = new SelectList(_context.Departments, "Id", "Id");
-            ViewData["RoleId"] = new SelectList(_context.Roles, "Id", "Id");
+            ViewData["DepId"] = new SelectList(_context.Departments, "Id", "Ad");
+            ViewData["RoleId"] = new SelectList(_context.Roles, "Id", "Ad");
             return View();
         }
 
@@ -106,8 +106,8 @@ namespace WebFinalPys.Controllers
                 await _context.SaveChangesAsync();
                 return RedirectToAction(nameof(Index));
             }
-            ViewData["DepId"] = new SelectList(_context.Departments, "Id", "Id", personel.DepId);
-            ViewData["RoleId"] = new SelectList(_context.Roles, "Id", "Id", personel.RoleId);
+            ViewData["DepId"] = new SelectList(_context.Departments, "Id", "Ad", personel.DepId);
+            ViewData["RoleId"] = new SelectList(_context.Roles, "Id", "Ad", personel.RoleId);
             return View(personel);
         }
 
@@ -124,8 +124,8 @@ namespace WebFinalPys.Controllers
             {
                 return NotFound();
             }
-            ViewData["DepId"] = new SelectList(_context.Departments, "Id", "Id", personel.DepId);
-            ViewData["RoleId"] = new SelectList(_context.Roles, "Id", "Id", personel.RoleId);
+            ViewData["DepId"] = new SelectList(_context.Departments, "Id", "Ad", personel.DepId);
+            ViewData["RoleId"] = new SelectList(_context.Roles, "Id", "Ad", personel.RoleId);
             return View(personel);
         }
 
@@ -161,8 +161,8 @@ namespace WebFinalPys.Controllers
                 }
                 return RedirectToAction(nameof(Index));
             }
-            ViewData["DepId"] = new SelectList(_context.Departments, "Id", "Id", personel.DepId);
-            ViewData["RoleId"] = new SelectList(_context.Roles, "Id", "Id", personel.RoleId);
+            ViewData["DepId"] = new SelectList(_context.Departments, "Id", "Ad", personel.DepId);
+            ViewData["RoleId"] = new SelectList(_context.Roles, "Id", "Ad", personel.RoleId);
             return View(personel);
         }
 
