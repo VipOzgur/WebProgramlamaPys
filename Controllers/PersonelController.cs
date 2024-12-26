@@ -81,7 +81,7 @@ namespace WebFinalPys.Controllers
         // For more details, see http://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public async Task<IActionResult> Create([Bind("Id,Ad,Soyad,Telefon,Adres,Mil,DepId,Durum,Maas,StartDate,Not,Password,RoleId,Profil,TcNo,Prim,Mesai")] Personel personel)
+        public async Task<IActionResult> Create([FromForm] Personel personel)
         {
 
             if (ModelState.IsValid)
@@ -91,7 +91,7 @@ namespace WebFinalPys.Controllers
                     //personel.Profil dolu ise ekliyoruz
                     string imageExtension = Path.GetExtension(personel.ImageFile.FileName);
                     string imageName = personel.Ad + personel.Soyad + DateTime.Now.ToString("dd-MM-yyyy_HH-mm-ss") + imageExtension;
-                    string imagePath = Path.Combine("../pys/wwwroot/images/" + imageName);
+                    string imagePath = Path.Combine("../WebFinalPys/wwwroot/images/" + imageName);
                     using (var fileStream = new FileStream(imagePath, FileMode.Create))
                     {
                         await personel.ImageFile.CopyToAsync(fileStream);
@@ -103,6 +103,12 @@ namespace WebFinalPys.Controllers
                     //değil ise varsayılanı ekliyoruz
                     personel.Profil = "/images/default.png";
                 }
+                if (personel.RoleId == null)
+                {
+                    personel.RoleId = 2;
+                }
+                var helper = new HelperClass();
+                personel.Password =helper.Hash(personel.TcNo);//varsayılan şifreyi tc olarak ayarlıyoruz
                 _context.Add(personel);
                 await _context.SaveChangesAsync();
                 return RedirectToAction(nameof(Index));
@@ -133,9 +139,9 @@ namespace WebFinalPys.Controllers
         // POST: Personel/Edit/5
         // To protect from overposting attacks, enable the specific properties you want to bind to.
         // For more details, see http://go.microsoft.com/fwlink/?LinkId=317598.
-        [HttpPost]
+        [HttpPost] 
         [ValidateAntiForgeryToken]
-        public async Task<IActionResult> Edit(int id, [Bind("Id,Ad,Soyad,Telefon,Adres,Mil,DepId,Durum,Maas,StartDate,Not,Password,RoleId,Profil,TcNo,Prim,Mesai")] Personel personel)
+        public async Task<IActionResult> Edit(int id, [FromForm] Personel personel)
         {
             if (id != personel.Id)
             {
@@ -151,7 +157,7 @@ namespace WebFinalPys.Controllers
                 }
                 catch (DbUpdateConcurrencyException)
                 {
-                    if (!PersonelExists(personel.Id))
+                    if (!PersonelExists((int)personel.Id))
                     {
                         return NotFound();
                     }
