@@ -58,10 +58,28 @@ namespace WebFinalPys.Controllers
         // For more details, see http://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public async Task<IActionResult> Create([Bind("Id,Ad,Soyad,Telefon,Adres,Meil,DepId,Durum,Maas,StartDate,Not,Password,RoleId,Profil,TcNo,Prim,Mesai")] Personel personel)
+        public async Task<IActionResult> Create([Bind("Id,Ad,Soyad,Telefon,Adres,Mil,DepId,Durum,Maas,StartDate,Not,Password,RoleId,Profil,TcNo,Prim,Mesai")] Personel personel)
         {
+
             if (ModelState.IsValid)
             {
+                if (personel.ImageFile != null)
+                {
+                    //personel.Profil dolu ise ekliyoruz
+                    string imageExtension = Path.GetExtension(personel.ImageFile.FileName);
+                    string imageName = personel.Ad + personel.Soyad + DateTime.Now.ToString("dd-MM-yyyy_HH-mm-ss") + imageExtension;
+                    string imagePath = Path.Combine("../pys/wwwroot/images/" + imageName);
+                    using (var fileStream = new FileStream(imagePath, FileMode.Create))
+                    {
+                        await personel.ImageFile.CopyToAsync(fileStream);
+                    }
+                    personel.Profil = "/images/" + imageName; //Resim yolunu veri tabanına ekleme
+                }
+                else
+                {
+                    //değil ise varsayılanı ekliyoruz
+                    personel.Profil = "/images/default.png";
+                }
                 _context.Add(personel);
                 await _context.SaveChangesAsync();
                 return RedirectToAction(nameof(Index));
@@ -94,7 +112,7 @@ namespace WebFinalPys.Controllers
         // For more details, see http://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public async Task<IActionResult> Edit(int id, [Bind("Id,Ad,Soyad,Telefon,Adres,Meil,DepId,Durum,Maas,StartDate,Not,Password,RoleId,Profil,TcNo,Prim,Mesai")] Personel personel)
+        public async Task<IActionResult> Edit(int id, [Bind("Id,Ad,Soyad,Telefon,Adres,Mil,DepId,Durum,Maas,StartDate,Not,Password,RoleId,Profil,TcNo,Prim,Mesai")] Personel personel)
         {
             if (id != personel.Id)
             {
