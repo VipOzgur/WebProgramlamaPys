@@ -1738,6 +1738,12 @@ C:\Users\Özgür Özkan\source\repos\WebFinalPys\wwwroot\Vendor\fontawesome-free
 wwwroot\css\sb-admin-2.min.css
 wwwroot\css\site.css
 wwwroot\favicon.ico
+wwwroot\images\AdminAdmin26-03-2024_03-36-01.png
+wwwroot\images\default.png
+wwwroot\images\SuperAdminAdmin26-03-2024_03-59-24.png
+wwwroot\images\User2User228-03-2024_05-30-14.png
+wwwroot\images\UserUser26-03-2024_06-52-05.png
+wwwroot\images\YazılımDevelopment26-03-2024_04-00-10.png
 wwwroot\img\undraw_posting_photo.svg
 wwwroot\img\undraw_profile.svg
 wwwroot\img\undraw_profile_1.svg
