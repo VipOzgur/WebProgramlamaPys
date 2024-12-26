@@ -11,7 +11,7 @@
 <hr />
 <div class="row">
     <div class="col-md-4">
-        <form asp-action="Create">
+        <form asp-action="Create" enctype="multipart/form-data">
             <div asp-validation-summary="ModelOnly" class="text-danger"></div>
             <div class="form-group">
                 <label asp-for="Ad" class="control-label"></label>
@@ -72,9 +72,9 @@
                 <select asp-for="RoleId" class ="form-control" asp-items="ViewBag.RoleId"></select>
             </div>
             <div class="form-group">
-                <label asp-for="Profil" class="control-label"></label>
-                <input asp-for="Profil" class="form-control" />
-                <span asp-validation-for="Profil" class="text-danger"></span>
+                <label asp-for="ImageFile" class="control-label"></label>
+                <input asp-for="ImageFile" id="imageInput" class="form-control" type="file" />
+                <span asp-validation-for="ImageFile" class="text-danger"></span>
             </div>
             <div class="form-group">
                 <label asp-for="TcNo" class="control-label"></label>

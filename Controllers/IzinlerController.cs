@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
+using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.Rendering;
 using Microsoft.EntityFrameworkCore;
@@ -9,6 +10,7 @@ using WebFinalPys.Models;
 
 namespace WebFinalPys.Controllers
 {
+    [Authorize]
     public class IzinlerController : Controller
     {
         private readonly PysDbContext _context;
@@ -19,12 +21,30 @@ namespace WebFinalPys.Controllers
         }
 
         // GET: Izinler
+        [HttpGet]
         public async Task<IActionResult> Index()
         {
             var pysDbContext = _context.Izinlers.Include(i => i.Admin).Include(i => i.Personel);
             return View(await pysDbContext.ToListAsync());
         }
+        [HttpPost]
+        public async Task<IActionResult> Index(string searchString)
+        {
+            if (_context.Izinlers == null)
+            {
+                return Problem("Entity set is null.");
+            }
 
+            var izinler = from m in _context.Izinlers
+                             select m;
+
+            if (!String.IsNullOrEmpty(searchString))
+            {
+                izinler = izinler.Include(i => i.Admin).Include(i => i.Personel).Where(s => s.Personel.Ad!.ToUpper().Contains(searchString.ToUpper()));
+            }
+            ViewData["searchString"] = searchString;
+            return View(await izinler.ToListAsync());
+        }
         // GET: Izinler/Details/5
         public async Task<IActionResult> Details(int? id)
         {

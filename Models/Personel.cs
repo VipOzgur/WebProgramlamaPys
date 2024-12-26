@@ -1,10 +1,13 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.ComponentModel.DataAnnotations.Schema;
 
 namespace WebFinalPys.Models;
 
 public partial class Personel
 {
+    [NotMapped]
+    public IFormFile? ImageFile { get; set; }
     public int Id { get; set; }
 
     public string Ad { get; set; } = null!;

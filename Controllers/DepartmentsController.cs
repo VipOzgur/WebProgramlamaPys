@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
+using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.Rendering;
 using Microsoft.EntityFrameworkCore;
@@ -9,6 +10,7 @@ using WebFinalPys.Models;
 
 namespace WebFinalPys.Controllers
 {
+    [Authorize]
     public class DepartmentsController : Controller
     {
         private readonly PysDbContext _context;
@@ -30,7 +32,7 @@ namespace WebFinalPys.Controllers
         {
             if (_context.Departments == null)
             {
-                return Problem("Entity set 'MvcMovieContext.Movie'  is null.");
+                return Problem("Entity set is null.");
             }
 
             var department = from m in _context.Departments

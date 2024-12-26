@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
+using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.Rendering;
 using Microsoft.EntityFrameworkCore;
@@ -9,6 +10,7 @@ using WebFinalPys.Models;
 
 namespace WebFinalPys.Controllers
 {
+    [Authorize]
     public class PersonelController : Controller
     {
         private readonly PysDbContext _context;
@@ -19,10 +21,30 @@ namespace WebFinalPys.Controllers
         }
 
         // GET: Personel
+        [HttpGet]
+
         public async Task<IActionResult> Index()
         {
             var pysDbContext = _context.Personels.Include(p => p.Dep).Include(p => p.Role);
             return View(await pysDbContext.ToListAsync());
+        }
+        [HttpPost]
+        public async Task<IActionResult> Index(string searchString)
+        {
+            if (_context.Personels == null)
+            {
+                return Problem("Entity set is null.");
+            }
+
+            var personel = from m in _context.Personels
+                             select m;
+
+            if (!String.IsNullOrEmpty(searchString))
+            {
+                personel = personel.Where(s => s.Ad!.ToUpper().Contains(searchString.ToUpper()));
+            }
+            ViewData["searchString"] = searchString;
+            return View(await personel.ToListAsync());
         }
 
         // GET: Personel/Details/5
@@ -58,10 +80,28 @@ namespace WebFinalPys.Controllers
         // For more details, see http://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public async Task<IActionResult> Create([Bind("Id,Ad,Soyad,Telefon,Adres,Meil,DepId,Durum,Maas,StartDate,Not,Password,RoleId,Profil,TcNo,Prim,Mesai")] Personel personel)
+        public async Task<IActionResult> Create([Bind("Id,Ad,Soyad,Telefon,Adres,Mil,DepId,Durum,Maas,StartDate,Not,Password,RoleId,Profil,TcNo,Prim,Mesai")] Personel personel)
         {
+
             if (ModelState.IsValid)
             {
+                if (personel.ImageFile != null)
+                {
+                    //personel.Profil dolu ise ekliyoruz
+                    string imageExtension = Path.GetExtension(personel.ImageFile.FileName);
+                    string imageName = personel.Ad + personel.Soyad + DateTime.Now.ToString("dd-MM-yyyy_HH-mm-ss") + imageExtension;
+                    string imagePath = Path.Combine("../pys/wwwroot/images/" + imageName);
+                    using (var fileStream = new FileStream(imagePath, FileMode.Create))
+                    {
+                        await personel.ImageFile.CopyToAsync(fileStream);
+                    }
+                    personel.Profil = "/images/" + imageName; //Resim yolunu veri tabanına ekleme
+                }
+                else
+                {
+                    //değil ise varsayılanı ekliyoruz
+                    personel.Profil = "/images/default.png";
+                }
                 _context.Add(personel);
                 await _context.SaveChangesAsync();
                 return RedirectToAction(nameof(Index));
@@ -94,7 +134,7 @@ namespace WebFinalPys.Controllers
         // For more details, see http://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public async Task<IActionResult> Edit(int id, [Bind("Id,Ad,Soyad,Telefon,Adres,Meil,DepId,Durum,Maas,StartDate,Not,Password,RoleId,Profil,TcNo,Prim,Mesai")] Personel personel)
+        public async Task<IActionResult> Edit(int id, [Bind("Id,Ad,Soyad,Telefon,Adres,Mil,DepId,Durum,Maas,StartDate,Not,Password,RoleId,Profil,TcNo,Prim,Mesai")] Personel personel)
         {
             if (id != personel.Id)
             {
