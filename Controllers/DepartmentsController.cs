@@ -30,7 +30,7 @@ namespace WebFinalPys.Controllers
         {
             if (_context.Departments == null)
             {
-                return Problem("Entity set 'MvcMovieContext.Movie'  is null.");
+                return Problem("Entity set is null.");
             }
 
             var department = from m in _context.Departments

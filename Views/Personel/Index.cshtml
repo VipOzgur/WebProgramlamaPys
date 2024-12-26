@@ -2,7 +2,7 @@
 
 @{
     ViewData["Title"] = "Index";
-    Layout = "~/Views/Shared/_Layout.cshtml";
+    Layout = "~/Views/Shared/_AdminLayout.cshtml";
 }
 
 <h1>Index</h1>
@@ -10,6 +10,13 @@
 <p>
     <a asp-action="Create">Create New</a>
 </p>
+<form asp-controller="Personel" asp-action="Index">
+    <p>
+        <label>Title: <input type="text" name="SearchString" value="@ViewData["searchString"]" /></label>
+        <input type="submit" value="Filter" />
+    </p>
+</form>
+
 <table class="table">
     <thead>
         <tr>

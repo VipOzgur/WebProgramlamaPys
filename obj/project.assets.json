@@ -8341,11 +8341,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\hilmi\\Source\\Repos\\WebProgramlamaPys\\WebFinalPys.csproj",
+      "projectUniqueName": "C:\\Users\\hilmi\\source\\repos\\VipOzgur\\WebProgramlamaPys\\WebFinalPys.csproj",
       "projectName": "WebFinalPys",
-      "projectPath": "C:\\Users\\hilmi\\Source\\Repos\\WebProgramlamaPys\\WebFinalPys.csproj",
+      "projectPath": "C:\\Users\\hilmi\\source\\repos\\VipOzgur\\WebProgramlamaPys\\WebFinalPys.csproj",
       "packagesPath": "C:\\Users\\hilmi\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\hilmi\\Source\\Repos\\WebProgramlamaPys\\obj\\",
+      "outputPath": "C:\\Users\\hilmi\\source\\repos\\VipOzgur\\WebProgramlamaPys\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
