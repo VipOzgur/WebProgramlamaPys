@@ -19,10 +19,30 @@ namespace WebFinalPys.Controllers
         }
 
         // GET: Personel
+        [HttpGet]
+
         public async Task<IActionResult> Index()
         {
             var pysDbContext = _context.Personels.Include(p => p.Dep).Include(p => p.Role);
             return View(await pysDbContext.ToListAsync());
+        }
+        [HttpPost]
+        public async Task<IActionResult> Index(string searchString)
+        {
+            if (_context.Personels == null)
+            {
+                return Problem("Entity set is null.");
+            }
+
+            var personel = from m in _context.Personels
+                             select m;
+
+            if (!String.IsNullOrEmpty(searchString))
+            {
+                personel = personel.Where(s => s.Ad!.ToUpper().Contains(searchString.ToUpper()));
+            }
+            ViewData["searchString"] = searchString;
+            return View(await personel.ToListAsync());
         }
 
         // GET: Personel/Details/5
