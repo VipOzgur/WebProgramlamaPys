@@ -10,14 +10,14 @@ using WebFinalPys.Models;
 
 namespace WebFinalPys.Controllers
 {
-    [Authorize]
+    [Authorize(Roles = "SuperAdmin")]
     public class RolesController : Controller
     {
         private readonly PysDbContext _context;
 
-        public RolesController(PysDbContext context)
+        public RolesController()
         {
-            _context = context;
+            _context = new PysDbContext();
         }
 
         // GET: Roles
@@ -103,7 +103,7 @@ namespace WebFinalPys.Controllers
                 }
                 catch (DbUpdateConcurrencyException)
                 {
-                    if (!RoleExists(role.Id))
+                    if (!RoleExists((int)role.Id))
                     {
                         return NotFound();
                     }

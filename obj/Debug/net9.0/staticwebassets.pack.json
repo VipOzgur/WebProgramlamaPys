@@ -7253,6 +7253,17 @@
       "PackagePath": "staticwebassets\\images\\AdminAdmin26-03-2024_03-36-01.png"
     },
     {
+<<<<<<< HEAD
+=======
+      "Id": "C:\\Users\\Özgür Özkan\\source\\repos\\WebFinalPys\\wwwroot\\images\\Buğra Kurnaz27-12-2024_07-43-18.png",
+      "PackagePath": "staticwebassets\\images\\Buğra Kurnaz27-12-2024_07-43-18.png"
+    },
+    {
+      "Id": "C:\\Users\\Özgür Özkan\\source\\repos\\WebFinalPys\\wwwroot\\images\\HilalAslan26-12-2024_21-45-14.png",
+      "PackagePath": "staticwebassets\\images\\HilalAslan26-12-2024_21-45-14.png"
+    },
+    {
+>>>>>>> 4e387ff058accbd03e5e6294d3b7d91bb2486010
       "Id": "C:\\Users\\Özgür Özkan\\source\\repos\\WebFinalPys\\wwwroot\\images\\SuperAdminAdmin26-03-2024_03-59-24.png",
       "PackagePath": "staticwebassets\\images\\SuperAdminAdmin26-03-2024_03-59-24.png"
     },

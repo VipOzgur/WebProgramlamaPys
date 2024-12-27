@@ -1,15 +1,19 @@
-﻿@model IEnumerable<WebFinalPys.Models.Mesailer>
+﻿@using System.Security.Claims
+@model IEnumerable<WebFinalPys.Models.Mesailer>
 
 @{
     ViewData["Title"] = "Index";
-    Layout = "~/Views/Shared/_Layout.cshtml";
+    Layout = "~/Views/Shared/_AdminLayout.cshtml";
 }
 
 <h1>Index</h1>
-
+@if (User.FindFirst(ClaimTypes.Role).Value != "User")
+{
 <p>
     <a asp-action="Create">Create New</a>
 </p>
+}
+<div class="table-responsive">
 <table class="table">
     <thead>
         <tr>
@@ -40,7 +44,10 @@
             <th>
                 @Html.DisplayNameFor(model => model.PersonelNavigation)
             </th>
+            @if (User.FindFirst(ClaimTypes.Role).Value != "User")
+            {
             <th></th>
+            }
         </tr>
     </thead>
     <tbody>
@@ -68,17 +75,30 @@
                 @Html.DisplayFor(modelItem => item.Tarih)
             </td>
             <td>
-                @Html.DisplayFor(modelItem => item.Admin.Id)
+                @Html.DisplayFor(modelItem => item.Admin.Ad)
             </td>
             <td>
-                @Html.DisplayFor(modelItem => item.PersonelNavigation.Id)
+                @Html.DisplayFor(modelItem => item.PersonelNavigation.Ad)
             </td>
+                @if (User.FindFirst(ClaimTypes.Role).Value != "User")
+                {
             <td>
                 <a asp-action="Edit" asp-route-id="@item.Id">Edit</a> |
                 <a asp-action="Details" asp-route-id="@item.Id">Details</a> |
                 <a asp-action="Delete" asp-route-id="@item.Id">Delete</a>
             </td>
+                }
         </tr>
 }
     </tbody>
 </table>
+</div>
+@if (TempData["mesaj"] != null)
+{
+    <text>
+        <script>
+            alert('@TempData["mesaj"].ToString()');
+        </script>
+    </text>
+    TempData["mesaj"] = null;
+}

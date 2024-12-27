@@ -72,6 +72,27 @@
       <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
       <OriginalItemSpec>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\images\AdminAdmin26-03-2024_03-36-01.png'))</OriginalItemSpec>
     </StaticWebAsset>
+<<<<<<< HEAD
+=======
+    <StaticWebAsset Include="$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\images\Buğra Kurnaz27-12-2024_07-43-18.png'))">
+      <SourceType>Package</SourceType>
+      <SourceId>WebFinalPys</SourceId>
+      <ContentRoot>$(MSBuildThisFileDirectory)..\staticwebassets\</ContentRoot>
+      <BasePath>_content/WebFinalPys</BasePath>
+      <RelativePath>images/Buğra Kurnaz27-12-2024_07-43-18.png</RelativePath>
+      <AssetKind>All</AssetKind>
+      <AssetMode>All</AssetMode>
+      <AssetRole>Primary</AssetRole>
+      <RelatedAsset></RelatedAsset>
+      <AssetTraitName></AssetTraitName>
+      <AssetTraitValue></AssetTraitValue>
+      <Fingerprint>ih5lijhuu4</Fingerprint>
+      <Integrity>+uIPiRm7KHmz+UwN5KBy+bqXh4vuvMAoC5vC+VDhpNk=</Integrity>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+      <OriginalItemSpec>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\images\Buğra Kurnaz27-12-2024_07-43-18.png'))</OriginalItemSpec>
+    </StaticWebAsset>
+>>>>>>> 4e387ff058accbd03e5e6294d3b7d91bb2486010
     <StaticWebAsset Include="$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\images\default.png'))">
       <SourceType>Package</SourceType>
       <SourceId>WebFinalPys</SourceId>
@@ -90,6 +111,27 @@
       <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
       <OriginalItemSpec>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\images\default.png'))</OriginalItemSpec>
     </StaticWebAsset>
+<<<<<<< HEAD
+=======
+    <StaticWebAsset Include="$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\images\HilalAslan26-12-2024_21-45-14.png'))">
+      <SourceType>Package</SourceType>
+      <SourceId>WebFinalPys</SourceId>
+      <ContentRoot>$(MSBuildThisFileDirectory)..\staticwebassets\</ContentRoot>
+      <BasePath>_content/WebFinalPys</BasePath>
+      <RelativePath>images/HilalAslan26-12-2024_21-45-14.png</RelativePath>
+      <AssetKind>All</AssetKind>
+      <AssetMode>All</AssetMode>
+      <AssetRole>Primary</AssetRole>
+      <RelatedAsset></RelatedAsset>
+      <AssetTraitName></AssetTraitName>
+      <AssetTraitValue></AssetTraitValue>
+      <Fingerprint>4sgho7v98t</Fingerprint>
+      <Integrity>zMyyP3g9ZyKkZNFZeH3PO/vVXARQI1gC/iNwr/4dGeA=</Integrity>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+      <OriginalItemSpec>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\images\HilalAslan26-12-2024_21-45-14.png'))</OriginalItemSpec>
+    </StaticWebAsset>
+>>>>>>> 4e387ff058accbd03e5e6294d3b7d91bb2486010
     <StaticWebAsset Include="$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\images\SuperAdminAdmin26-03-2024_03-59-24.png'))">
       <SourceType>Package</SourceType>
       <SourceId>WebFinalPys</SourceId>

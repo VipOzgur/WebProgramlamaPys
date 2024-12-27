@@ -4,6 +4,15 @@
 }
 
 <div class="text-center">
-    <h1 class="display-4">Welcome</h1>
-    <p>Learn about <a href="https://learn.microsoft.com/aspnet/core">building Web apps with ASP.NET Core</a>.</p>
+    <h2 class="display-4">HOŞGELDİNİZ</h2>
+    <h4>Personel Yönetim Sistemi</h4> 
 </div>
+@if (TempData["mesaj"] != null)
+{
+    <text>
+        <script>
+            alert('@TempData["mesaj"].ToString()');
+        </script>
+    </text>
+    TempData["mesaj"] = null;
+}

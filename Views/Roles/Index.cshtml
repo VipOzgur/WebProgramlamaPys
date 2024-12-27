@@ -2,7 +2,7 @@
 
 @{
     ViewData["Title"] = "Index";
-    Layout = "~/Views/Shared/_Layout.cshtml";
+    Layout = "~/Views/Shared/_AdminLayout.cshtml";
 }
 
 <h1>Index</h1>
@@ -34,3 +34,12 @@
 }
     </tbody>
 </table>
+@if (TempData["mesaj"] != null)
+{
+    <text>
+        <script>
+            alert('@TempData["mesaj"].ToString()');
+        </script>
+    </text>
+    TempData["mesaj"] = null;
+}

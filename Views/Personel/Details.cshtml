@@ -1,8 +1,9 @@
-﻿@model WebFinalPys.Models.Personel
+﻿@using System.Security.Claims
+@model WebFinalPys.Models.Personel
 
 @{
     ViewData["Title"] = "Details";
-    Layout = "~/Views/Shared/_Layout.cshtml";
+    Layout = "~/Views/Shared/_AdminLayout.cshtml";
 }
 
 <h1>Details</h1>
@@ -99,17 +100,19 @@
             @Html.DisplayNameFor(model => model.Dep)
         </dt>
         <dd class = "col-sm-10">
-            @Html.DisplayFor(model => model.Dep.Id)
+            @Html.DisplayFor(model => model.Dep.Ad)
         </dd>
         <dt class = "col-sm-2">
             @Html.DisplayNameFor(model => model.Role)
         </dt>
         <dd class = "col-sm-10">
-            @Html.DisplayFor(model => model.Role.Id)
+            @Html.DisplayFor(model => model.Role.Ad)
         </dd>
     </dl>
 </div>
+@if (User.FindFirst(ClaimTypes.Role).Value != "User"){
 <div>
     <a asp-action="Edit" asp-route-id="@Model?.Id">Edit</a> |
     <a asp-action="Index">Back to List</a>
 </div>
+}

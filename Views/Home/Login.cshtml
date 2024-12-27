@@ -100,3 +100,13 @@
 </body>
 
 </html>
+
+@if (TempData["mesaj"] != null)
+{
+    <text>
+        <script>
+            alert('@TempData["mesaj"].ToString()');
+        </script>
+    </text>
+    TempData["mesaj"] = null;
+}
