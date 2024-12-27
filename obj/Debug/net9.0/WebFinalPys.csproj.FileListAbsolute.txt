@@ -4068,7 +4068,6 @@ C:\Users\Özgür Özkan\source\repos\WebFinalPys\obj\Debug\net9.0\staticwebasset
 C:\Users\Özgür Özkan\source\repos\WebFinalPys\obj\Debug\net9.0\staticwebassets\msbuild.buildMultiTargeting.WebFinalPys.props
 C:\Users\Özgür Özkan\source\repos\WebFinalPys\obj\Debug\net9.0\staticwebassets\msbuild.buildTransitive.WebFinalPys.props
 C:\Users\Özgür Özkan\source\repos\WebFinalPys\obj\Debug\net9.0\staticwebassets.pack.json
-C:\Users\Özgür Özkan\source\repos\WebFinalPys\obj\Debug\net9.0\staticwebassets.upToDateCheck.txt
 C:\Users\Özgür Özkan\source\repos\WebFinalPys\obj\Debug\net9.0\WebFinal.C4B49C72.Up2Date
 C:\Users\Özgür Özkan\source\repos\WebFinalPys\obj\Debug\net9.0\WebFinalPys.dll
 C:\Users\Özgür Özkan\source\repos\WebFinalPys\obj\Debug\net9.0\refint\WebFinalPys.dll
@@ -8149,3 +8148,4 @@ C:\Users\HİLAL\Source\Repos\web proje1\WebFinalPys\obj\Debug\net9.0\refint\WebF
 C:\Users\HİLAL\Source\Repos\web proje1\WebFinalPys\obj\Debug\net9.0\WebFinalPys.pdb
 C:\Users\HİLAL\Source\Repos\web proje1\WebFinalPys\obj\Debug\net9.0\WebFinalPys.genruntimeconfig.cache
 C:\Users\HİLAL\Source\Repos\web proje1\WebFinalPys\obj\Debug\net9.0\ref\WebFinalPys.dll
+C:\Users\Özgür Özkan\source\repos\WebFinalPys\obj\Debug\net9.0\staticwebassets.upToDateCheck.txt

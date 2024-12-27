@@ -1,4 +1,5 @@
-﻿@model WebFinalPys.Models.Personel
+﻿@using System.Security.Claims
+@model WebFinalPys.Models.Personel
 
 @{
     ViewData["Title"] = "Details";
@@ -109,7 +110,9 @@
         </dd>
     </dl>
 </div>
+@if (User.FindFirst(ClaimTypes.Role).Value != "User"){
 <div>
     <a asp-action="Edit" asp-route-id="@Model?.Id">Edit</a> |
     <a asp-action="Index">Back to List</a>
 </div>
+}

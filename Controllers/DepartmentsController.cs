@@ -5,12 +5,14 @@ using System.Threading.Tasks;
 using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.Rendering;
+using Microsoft.CodeAnalysis.Scripting;
 using Microsoft.EntityFrameworkCore;
 using WebFinalPys.Models;
+using static System.Net.Mime.MediaTypeNames;
 
 namespace WebFinalPys.Controllers
 {
-    [Authorize]
+    [Authorize(Roles = "SuperAdmin")]
     public class DepartmentsController : Controller
     {
         private readonly PysDbContext _context;
@@ -76,14 +78,16 @@ namespace WebFinalPys.Controllers
         // For more details, see http://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public async Task<IActionResult> Create([Bind("Id,Ad,Durum")] Department department)
+        public async Task<IActionResult> Create([FromForm] Department department)
         {
             if (ModelState.IsValid)
             {
                 _context.Add(department);
                 await _context.SaveChangesAsync();
+                TempData["mesaj"] = "Departman Eklendi";
                 return RedirectToAction(nameof(Index));
             }
+            TempData["mesaj"] = "Bir hata oluştu";
             return View(department);
         }
 
@@ -108,7 +112,7 @@ namespace WebFinalPys.Controllers
         // For more details, see http://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public async Task<IActionResult> Edit(int id, [Bind("Id,Ad,Durum")] Department department)
+        public async Task<IActionResult> Edit(int id, [FromForm] Department department)
         {
             if (id != department.Id)
             {
@@ -120,11 +124,12 @@ namespace WebFinalPys.Controllers
                 try
                 {
                     _context.Update(department);
+                    TempData["mesaj"] = "Departman güncellendi";
                     await _context.SaveChangesAsync();
                 }
                 catch (DbUpdateConcurrencyException)
                 {
-                    if (!DepartmentExists(department.Id))
+                    if (!DepartmentExists((int)department.Id))
                     {
                         return NotFound();
                     }
@@ -133,6 +138,7 @@ namespace WebFinalPys.Controllers
                         throw;
                     }
                 }
+                TempData["mesaj"] = "Bir sorun oluştu";
                 return RedirectToAction(nameof(Index));
             }
             return View(department);
@@ -168,6 +174,7 @@ namespace WebFinalPys.Controllers
             }
 
             await _context.SaveChangesAsync();
+            ViewData["mesaj"] = "Departman Silindi";
             return RedirectToAction(nameof(Index));
         }
 

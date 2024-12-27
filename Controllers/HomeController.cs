@@ -28,6 +28,7 @@ namespace WebFinalPys.Controllers
             ClaimsPrincipal claimUser = HttpContext.User;
             if (claimUser.Identity.IsAuthenticated)
             {
+                TempData["mesaj"] = $"Ad: {User.FindFirst(ClaimTypes.NameIdentifier).Value} Role: {User.FindFirst(ClaimTypes.Role).Value} Giris yapýldý.";
                 return RedirectToAction("Index", "Home");
             }
             return View();
@@ -55,6 +56,7 @@ namespace WebFinalPys.Controllers
                     AllowRefresh = true
                 };
                 await HttpContext.SignInAsync(CookieAuthenticationDefaults.AuthenticationScheme, new ClaimsPrincipal(claimsIdentity), properties);
+                TempData["mesaj"] = $"Ad: {personel.Ad} Role: {personel.Role.Ad} Giris yapýldý.";
                 return RedirectToAction("Index", "Home");
             }
             TempData["hata"] = "Giriþ bilgileriniz yanlýþ";

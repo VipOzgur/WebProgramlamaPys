@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Linq;
+using System.Security.Claims;
 using System.Threading.Tasks;
 using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
@@ -23,8 +24,9 @@ namespace WebFinalPys.Controllers
         // GET: MaasPrim
         public async Task<IActionResult> Index()
         {
-            var pysDbContext = _context.MaasPrims.Include(m => m.Admin).Include(m => m.Personel);
-            return View(await pysDbContext.ToListAsync());
+            return _context.MaasPrims != null ? (User.FindFirst(ClaimTypes.Role).Value != "User") ?
+                          View(await _context.MaasPrims.Include(i => i.Personel).Include(p => p.Admin).OrderByDescending(m => m.Id).ToListAsync()) : View(await _context.MaasPrims.Include(i => i.Personel).Include(p => p.Admin).Where(x => x.PersonelId == long.Parse(User.FindFirst(ClaimTypes.Sid).Value)).OrderByDescending(m => m.Id).ToListAsync()) :
+                          Problem("Entity set 'PysDbContext.MaasPrims'  is null.");
         }
 
         // GET: MaasPrim/Details/5
@@ -35,10 +37,9 @@ namespace WebFinalPys.Controllers
                 return NotFound();
             }
 
-            var maasPrim = await _context.MaasPrims
-                .Include(m => m.Admin)
-                .Include(m => m.Personel)
-                .FirstOrDefaultAsync(m => m.Id == id);
+            var maasPrim = (User.FindFirst(ClaimTypes.Role).Value != "User") ? await _context.MaasPrims.Include(i => i.Personel).Include(p => p.Admin)
+                .FirstOrDefaultAsync(m => m.Id == id) : await _context.MaasPrims.Include(i => i.Personel).Include(p => p.Admin)
+                .FirstOrDefaultAsync(m => m.Id == id && m.PersonelId == long.Parse(User.FindFirst(ClaimTypes.Sid).Value));
             if (maasPrim == null)
             {
                 return NotFound();
@@ -48,6 +49,7 @@ namespace WebFinalPys.Controllers
         }
 
         // GET: MaasPrim/Create
+        [Authorize(Roles = "Admin, SuperAdmin")]
         public IActionResult Create()
         {
             ViewData["AdminId"] = new SelectList(_context.Personels, "Id", "Ad");
@@ -60,12 +62,14 @@ namespace WebFinalPys.Controllers
         // For more details, see http://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
         [ValidateAntiForgeryToken]
+        [Authorize(Roles = "Admin, SuperAdmin")]
         public async Task<IActionResult> Create([Bind("Id,AdminId,PersonelId,Tutar,OdemeDurumu,Tarih,Not")] MaasPrim maasPrim)
         {
             if (ModelState.IsValid)
             {
                 _context.Add(maasPrim);
                 await _context.SaveChangesAsync();
+                TempData["mesaj"] = "Prim eklendi";
                 return RedirectToAction(nameof(Index));
             }
             ViewData["AdminId"] = new SelectList(_context.Personels, "Id", "Ad", maasPrim.AdminId);
@@ -74,6 +78,7 @@ namespace WebFinalPys.Controllers
         }
 
         // GET: MaasPrim/Edit/5
+        [Authorize(Roles = "Admin, SuperAdmin")]
         public async Task<IActionResult> Edit(int? id)
         {
             if (id == null)
@@ -96,6 +101,7 @@ namespace WebFinalPys.Controllers
         // For more details, see http://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
         [ValidateAntiForgeryToken]
+        [Authorize(Roles = "Admin, SuperAdmin")]
         public async Task<IActionResult> Edit(int id, [Bind("Id,AdminId,PersonelId,Tutar,OdemeDurumu,Tarih,Not")] MaasPrim maasPrim)
         {
             if (id != maasPrim.Id)
@@ -112,7 +118,7 @@ namespace WebFinalPys.Controllers
                 }
                 catch (DbUpdateConcurrencyException)
                 {
-                    if (!MaasPrimExists(maasPrim.Id))
+                    if (!MaasPrimExists((int)maasPrim.Id))
                     {
                         return NotFound();
                     }
@@ -121,6 +127,7 @@ namespace WebFinalPys.Controllers
                         throw;
                     }
                 }
+                TempData["mesaj"] = "Prim Düzenlendi";
                 return RedirectToAction(nameof(Index));
             }
             ViewData["AdminId"] = new SelectList(_context.Personels, "Id", "Ad", maasPrim.AdminId);
@@ -129,6 +136,7 @@ namespace WebFinalPys.Controllers
         }
 
         // GET: MaasPrim/Delete/5
+        [Authorize(Roles = "Admin, SuperAdmin")]
         public async Task<IActionResult> Delete(int? id)
         {
             if (id == null)
@@ -151,6 +159,7 @@ namespace WebFinalPys.Controllers
         // POST: MaasPrim/Delete/5
         [HttpPost, ActionName("Delete")]
         [ValidateAntiForgeryToken]
+        [Authorize(Roles = "Admin, SuperAdmin")]
         public async Task<IActionResult> DeleteConfirmed(int id)
         {
             var maasPrim = await _context.MaasPrims.FindAsync(id);
@@ -158,8 +167,8 @@ namespace WebFinalPys.Controllers
             {
                 _context.MaasPrims.Remove(maasPrim);
             }
-
             await _context.SaveChangesAsync();
+            TempData["mesaj"] = "Prim Silindi";
             return RedirectToAction(nameof(Index));
         }
 

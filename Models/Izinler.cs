@@ -5,11 +5,11 @@ namespace WebFinalPys.Models;
 
 public partial class Izinler
 {
-    public int Id { get; set; }
+    public int? Id { get; set; }
 
-    public int AdminId { get; set; }
+    public int? AdminId { get; set; }
 
-    public int PersonelId { get; set; }
+    public int? PersonelId { get; set; }
 
     public string? IzinTipi { get; set; }
 
@@ -21,7 +21,7 @@ public partial class Izinler
 
     public string? Tarih { get; set; }
 
-    public virtual Personel Admin { get; set; } = null!;
+    public virtual Personel? Admin { get; set; } = null!;
 
-    public virtual Personel Personel { get; set; } = null!;
+    public virtual Personel? Personel { get; set; } = null!;
 }

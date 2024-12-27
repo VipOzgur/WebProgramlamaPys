@@ -23,13 +23,14 @@ namespace WebFinalPys.Controllers
 
         // GET: Personel
         [HttpGet]
-
+        [Authorize(Roles = "Admin, SuperAdmin")]
         public async Task<IActionResult> Index()
         {
             var pysDbContext = _context.Personels.Include(p => p.Dep).Include(p => p.Role);
             return View(await pysDbContext.ToListAsync());
         }
         [HttpPost]
+        [Authorize(Roles = "Admin, SuperAdmin")]
         public async Task<IActionResult> Index(string searchString)
         {
             if (_context.Personels == null)
@@ -55,6 +56,10 @@ namespace WebFinalPys.Controllers
             {
                 return NotFound();
             }
+            if(User.FindFirst(ClaimTypes.Role).Value == "User" && (User.FindFirst(ClaimTypes.Sid).Value) != id.ToString())
+            {
+                return NotFound();
+            }
 
             var personel = await _context.Personels
                 .Include(p => p.Dep)
@@ -69,6 +74,7 @@ namespace WebFinalPys.Controllers
         }
 
         // GET: Personel/Create
+        [Authorize(Roles = "Admin, SuperAdmin")]
         public IActionResult Create()
         {
             ViewData["DepId"] = new SelectList(_context.Departments, "Id", "Ad");
@@ -81,6 +87,7 @@ namespace WebFinalPys.Controllers
         // For more details, see http://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
         [ValidateAntiForgeryToken]
+        [Authorize(Roles = "Admin, SuperAdmin")]
         public async Task<IActionResult> Create([FromForm] Personel personel)
         {
 
@@ -111,6 +118,7 @@ namespace WebFinalPys.Controllers
                 personel.Password =helper.Hash(personel.TcNo);//varsayılan şifreyi tc olarak ayarlıyoruz
                 _context.Add(personel);
                 await _context.SaveChangesAsync();
+                TempData["mesaj"] = "Personel eklendi";
                 return RedirectToAction(nameof(Index));
             }
             ViewData["DepId"] = new SelectList(_context.Departments, "Id", "Ad", personel.DepId);
@@ -119,6 +127,7 @@ namespace WebFinalPys.Controllers
         }
 
         // GET: Personel/Edit/5
+        [Authorize(Roles = "Admin, SuperAdmin")]
         public async Task<IActionResult> Edit(int? id)
         {
             if (id == null)
@@ -141,6 +150,7 @@ namespace WebFinalPys.Controllers
         // For more details, see http://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost] 
         [ValidateAntiForgeryToken]
+        [Authorize(Roles = "Admin, SuperAdmin")]
         public async Task<IActionResult> Edit(int id, [FromForm] Personel personel)
         {
             if (id != personel.Id)
@@ -166,6 +176,7 @@ namespace WebFinalPys.Controllers
                         throw;
                     }
                 }
+                TempData["mesaj"] = "Personel Düzenlendi";
                 return RedirectToAction(nameof(Index));
             }
             ViewData["DepId"] = new SelectList(_context.Departments, "Id", "Ad", personel.DepId);
@@ -174,6 +185,7 @@ namespace WebFinalPys.Controllers
         }
 
         // GET: Personel/Delete/5
+        [Authorize(Roles = "Admin, SuperAdmin")]
         public async Task<IActionResult> Delete(int? id)
         {
             if (id == null)
@@ -196,6 +208,7 @@ namespace WebFinalPys.Controllers
         // POST: Personel/Delete/5
         [HttpPost, ActionName("Delete")]
         [ValidateAntiForgeryToken]
+        [Authorize(Roles = "Admin, SuperAdmin")]
         public async Task<IActionResult> DeleteConfirmed(int id)
         {
             var personel = await _context.Personels.FindAsync(id);
@@ -205,6 +218,7 @@ namespace WebFinalPys.Controllers
             }
 
             await _context.SaveChangesAsync();
+            TempData["mesaj"] = "Personel Silindi";
             return RedirectToAction(nameof(Index));
         }
         public IActionResult Password()

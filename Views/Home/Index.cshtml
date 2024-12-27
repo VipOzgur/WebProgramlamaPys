@@ -7,3 +7,12 @@
     <h2 class="display-4">HOŞGELDİNİZ</h2>
     <h4>Personel Yönetim Sistemi</h4> 
 </div>
+@if (TempData["mesaj"] != null)
+{
+    <text>
+        <script>
+            alert('@TempData["mesaj"].ToString()');
+        </script>
+    </text>
+    TempData["mesaj"] = null;
+}

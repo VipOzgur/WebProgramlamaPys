@@ -16,8 +16,8 @@
         <input type="submit" value="Filter" />
     </p>
 </form>
-
-<table class="table">
+<div class="table-responsive">
+<table class="table flex-row-reverse">
     <thead>
         <tr>
             <th>
@@ -49,12 +49,6 @@
             </th>
             <th>
                 @Html.DisplayNameFor(model => model.TcNo)
-            </th>
-            <th>
-                @Html.DisplayNameFor(model => model.Prim)
-            </th>
-            <th>
-                @Html.DisplayNameFor(model => model.Mesai)
             </th>
             <th>
                 @Html.DisplayNameFor(model => model.Dep)
@@ -99,12 +93,6 @@
                 @Html.DisplayFor(modelItem => item.TcNo)
             </td>
             <td>
-                @Html.DisplayFor(modelItem => item.Prim)
-            </td>
-            <td>
-                @Html.DisplayFor(modelItem => item.Mesai)
-            </td>
-            <td>
                 @Html.DisplayFor(modelItem => item.Dep.Ad)
             </td>
             <td>
@@ -119,3 +107,13 @@
 }
     </tbody>
 </table>
+</div>
+@if (TempData["mesaj"] != null)
+{
+    <text>
+        <script>
+            alert('@TempData["mesaj"].ToString()');
+        </script>
+    </text>
+    TempData["mesaj"] = null;
+}

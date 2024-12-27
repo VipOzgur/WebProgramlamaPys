@@ -21,7 +21,7 @@
     <!-- Custom fonts for this template-->
     <link href="~/Vendor/fontawesome-free/css/all.min.css" rel="stylesheet" type="text/css">
     <link href="https://fonts.googleapis.com/css?family=Nunito:200,200i,300,300i,400,400i,600,600i,700,700i,800,800i,900,900i"
-          rel="stylesheet">
+    rel="stylesheet">
 
     <!-- Custom styles for this template-->
     <link href="~/css/sb-admin-2.min.css" rel="stylesheet">
@@ -38,7 +38,7 @@
 
             <!-- Sidebar - Brand -->
             <a class="sidebar-brand d-flex align-items-center justify-content-center"  >
-               @*  <div class="sidebar-brand-icon rotate-n-15">
+                @*  <div class="sidebar-brand-icon rotate-n-15">
                 </div> *@
                 <p>Role: @userRole</p>
                 @* <div class="sidebar-brand-text mx-3"><sup></sup></div> *@
@@ -53,51 +53,52 @@
 
             <!-- Heading -->
             <div class="sidebar-heading">
-                Kullanıcı Arayüzü
+                @if(userRole == "User")
+                {
+                    <text>Kullanıcı</text>
+                }
+                else {
+                    <text>Admin</text>
+                }
+                Arayüzü
             </div>
-
- 
 
             <!-- Divider -->
             <hr class="sidebar-divider">
 
             <!-- Heading -->
             <div class="sidebar-heading">
-                
+
             </div>
 
-            <!-- Nav Item - Pages Collapse Menu -->
-            <li class="nav-item">
-             
-                <div id="collapsePages" class="collapse" aria-labelledby="headingPages" data-parent="#accordionSidebar">
-                    <div class="bg-white py-2 collapse-inner rounded">
-                        <h6 class="collapse-header">Giriş Ekranı:</h6>
-                        <a class="collapse-item" href="login.html">Giriş </a>
-                        <a class="collapse-item" href="register.html">Kaydol</a>
-                        <a class="collapse-item" href="forgot-password.html">Şifremi Unuttum</a>
-                        <div class="collapse-divider"></div>
-                        <h6 class="collapse-header">Diğer Sayfalar:</h6>
-                        <a class="collapse-item" href="404.html">404 Page</a>
-                        <a class="collapse-item" href="blank.html">Blank Page</a>
-                    </div>
-                </div>
-            </li>
-
-         
             <!-- Nav Item - Tables -->
             <li class="nav-item">
-                <a class="nav-link" asp-controller="Departments" asp-action="Index">
+                <a class="nav-link" asp-controller="Personel" asp-action="Password">
                     <i class="fas fa-fw fa-table"></i>
-                    <span>Departmanlar</span>
+                    <span>Yeni Şifre</span>
                 </a>
             </li>
+            @if(userRole == "SuperAdmin"){
+                <li class="nav-item">
+                    <a class="nav-link" asp-controller="Departments" asp-action="Index">
+                        <i class="fas fa-fw fa-table"></i>
+                        <span>Departmanlar</span>
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" asp-controller="Roles" asp-action="Index">
+                        <i class="fas fa-fw fa-table"></i>
+                        <span>Roller</span>
+                    </a>
+                </li>
+            }
             <li class="nav-item">
                 <a class="nav-link" asp-controller="Izinler" asp-action="Index">
                     <i class="fas fa-fw fa-table"></i>
                     <span>İzinler</span>
                 </a>
             </li>
-  <li class="nav-item">
+            <li class="nav-item">
                 <a class="nav-link" asp-controller="MaasPrim" asp-action="Index">
                     <i class="fas fa-fw fa-table"></i>
                     <span>Maaş Primleri</span>
@@ -115,19 +116,15 @@
                     <span>Mesailer</span>
                 </a>
             </li>
-            <li class="nav-item">
-                <a class="nav-link" asp-controller="Roles" asp-action="Index">
-                    <i class="fas fa-fw fa-table"></i>
-                    <span>Roller</span>
-                </a>
-            </li>
-            <li class="nav-item">
-                <a class="nav-link" asp-controller="Personel" asp-action="Index">
+            @if (userRole != "User")
+            {
+                <li class="nav-item">
+                    <a class="nav-link" asp-controller="Personel" asp-action="Index">
                     <i class="fas fa-fw fa-table"></i>
                     <span>Personel</span>
                 </a>
             </li>
-
+            }
             <!-- Divider -->
             <hr class="sidebar-divider d-none d-md-block">
 
@@ -181,56 +178,10 @@
                                 </form>
                             </div>
                         </li>
-
-                        <!-- Nav Item - Alerts -->
-                        <li class="nav-item dropdown no-arrow mx-1">
-                            <a class="nav-link dropdown-toggle" href="#" id="alertsDropdown" role="button"
-                               data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                                <i class="fas fa-bell fa-fw"></i>
-                                <!-- Counter - Alerts -->
-                                <span class="badge badge-danger badge-counter">3+</span>
-                            </a>
-                            <!-- Dropdown - Alerts -->
-                            <div class="dropdown-list dropdown-menu dropdown-menu-right shadow animated--grow-in"
-                                 aria-labelledby="alertsDropdown">
-                                <h6 class="dropdown-header">
-                                    Uyarı Merkezi
-                                </h6>
-                                <a class="dropdown-item d-flex align-items-center" href="#">
-                                    <div class="mr-3">
-                                        <div class="icon-circle bg-primary">
-                                            <i class="fas fa-file-alt text-white"></i>
-                                        </div>
-                                    </div>
-                                    <div>
-                                        <div class="small text-gray-500">12 Aralık 2024</div>
-                                        <span class="font-weight-bold">Aylık rapor  indirmeye hazır!</span>
-                                    </div>
-                                </a>
-                                <a class="dropdown-item d-flex align-items-center" href="#">
-                                    <div class="mr-3">
-                                        <div class="icon-circle bg-success">
-                                            <i class="fas fa-donate text-white"></i>
-                                        </div>
-                                    </div>
-                                    <div>
-                                        <div class="small text-gray-500">3 Aralık 2024</div>
-                                        
-                                    </div>
-                                </a>
-                                <a class="dropdown-item d-flex align-items-center" href="#">
-                                    <div class="mr-3">
-                                        <div class="icon-circle bg-warning">
-                                            <i class="fas fa-exclamation-triangle text-white"></i>
-                                        </div>
-                                    </div>
-                                    <div>
-                                        <div class="small text-gray-500">2 Aralık 2024</div>
-                                        
-                                    </div>
-                                </a>
-                                <a class="dropdown-item text-center small text-gray-500" href="#">Tüm Uyarıları Göster</a>
-                            </div>
+                        <a class="nav-item dropdown no-arrow mx-1" asp-controller="Home" asp-action="LogOut">
+                            <i class="fas fa-sign-out-alt fa-sm fa-fw mr-2 text-gray-400"></i>
+                            Çıkış
+                        </a>
                         </li>
 
                         <!-- Nav Item - Messages -->
@@ -306,12 +257,11 @@
 
                         <!-- Nav Item - User Information -->
                         <li class="nav-item dropdown no-arrow">
-                            <a class="nav-link dropdown-toggle" href="#" id="userDropdown" role="button"
-                               data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                                <span class="mr-2 d-none d-lg-inline text-gray-600 small">@userName</span>
-                                <img class="rounded-circle" src="@userProfil">
+                            <a class="nav-link dropdown-toggle" asp-action="Details" asp-controller="Personel" asp-route-id="@userId">
+                                <span class="mr-2 d-none d-lg-inline text-gray-600 ">@userName</span>
+                                <img class="rounded-circle" style="height:40px;" src="@userProfil">
                             </a>
-                            <!-- Dropdown - User Information -->
+                           @*  <!-- Dropdown - User Information -->
                             <div class="dropdown-menu dropdown-menu-right shadow animated--grow-in"
                                  aria-labelledby="userDropdown">
                                 <a class="dropdown-item" href="#">
@@ -331,7 +281,7 @@
                                     <i class="fas fa-sign-out-alt fa-sm fa-fw mr-2 text-gray-400"></i>
                                     Çıkış
                                 </a>
-                            </div>
+                            </div> *@
                         </li>
 
                     </ul>
@@ -339,9 +289,11 @@
                 </nav>
                 <!-- End of Topbar -->
                 <!-- /.container-fluid -->
+            <div class="container-fluid">
                 @RenderBody()
-
+                </div>
             </div>
+
             <!-- End of Main Content -->
             <!-- Footer -->
             <footer class="sticky-footer bg-white">

@@ -5,11 +5,11 @@ namespace WebFinalPys.Models;
 
 public partial class MaasZamlari
 {
-    public int Id { get; set; }
+    public int? Id { get; set; }
 
-    public int AdminId { get; set; }
+    public int? AdminId { get; set; }
 
-    public int PersonelId { get; set; }
+    public int? PersonelId { get; set; }
 
     public int? Tutar { get; set; }
 
@@ -21,7 +21,7 @@ public partial class MaasZamlari
 
     public int? Tip { get; set; }
 
-    public virtual Personel Admin { get; set; } = null!;
+    public virtual Personel? Admin { get; set; } = null!;
 
-    public virtual Personel Personel { get; set; } = null!;
+    public virtual Personel? Personel { get; set; } = null!;
 }
